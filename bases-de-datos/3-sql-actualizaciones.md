@@ -26,4 +26,11 @@ En este caso se realizan las dos sentencias *UPDATE*, pero si hacemos lo siguien
     UPDATE...;
     ROLLBACK TO PEREZ;
 
-solo se ejecutaria la primera *UPDATE*
+solo se ejecutaria la primera *UPDATE*, pero si ejecutamos:
+
+    UPDATE...;
+    SAVEPOINT PEREZ;
+    UPDATE...;
+    ROLLBACK;
+
+no se ejecutaria nada.
