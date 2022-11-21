@@ -21,6 +21,7 @@ Departamentos:
 | 20 | Vendes |
 
 Cuando realizamos la siguiente sentencia:
+
     SELECT * FROM EMPLEADOS, DEPARTAMENTOS
 
 Oracle hace lo que se llama el producto cartesiano de las dos tablas por lo que la tabla resultante quedaria algo asi:
