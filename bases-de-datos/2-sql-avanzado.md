@@ -211,12 +211,13 @@ Por ejemplo, queremos saber el nombre de un empleado y el nombre de su jefe:
         EMPLOYEES J
         ON(E.MANAGER_ID=J.EMPLOYEE_ID);
 
+*EMPLOYEES*
 | EMPID | LAST_NAME | MANID
 |--|--|--|
 1 | Forner | 
 2 | Carla | 1
 
-
+*EMPLOYEES \* EMLOYEES*
 | EMPID | LAST_NAME | MANID | EMPID | LAST_NAME | MANID
 |--|--|--|--|--|--|
 | 1 | Forner | | 1 | Forner | 
