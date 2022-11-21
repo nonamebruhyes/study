@@ -231,7 +231,7 @@ Por ejemplo, queremos saber el nombre de un empleado y el nombre de su jefe:
 |--|--|--|--|--|--|
 | 2 | Carla | 1 | 1 | Forner | 
 
-### Agrupacion avanzada
+### Agrupacion avanzada (ROLLUP / CUBE)
 
 Sea tabla *MUNICIPIOS*:
 |CODAUT|CODPRO|CODMUN|NHAB
@@ -240,3 +240,11 @@ Sea tabla *MUNICIPIOS*:
 |1|2|2|14
 |2|3|3|12
 |2|4|4|19
+
+    SELECT
+        CODAUT, CODPRO, SUM(NHAB)
+    FROM
+        MUNICIPIOS
+    GROUP BY
+        ROLLUP (CODAUT, CODPRO)
+    ORDER BY CODAUT, CODPRO;
