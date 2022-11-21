@@ -16,6 +16,6 @@ Empleados:
 Departamentos: 
 
 | CODDEP | DESCRIPCIO |
-| -- | -- | -- | 
+| -- | -- |
 | 10 | Compres |
 | 20 | Vendes |
