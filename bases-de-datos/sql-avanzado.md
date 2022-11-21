@@ -66,3 +66,14 @@ Hay veces en la que una de las tablas puede tener el campo que las relaciona con
 2. ***RIGHT JOIN***: esta sentencia saca los registros de la tabla de la derecha aunque no tengan ninguna relacion con la tabla de la izquierda.
 3. ***OUTER JOIN***: esta sentencia junta las dos anteriores
 4. ***INNER JOIN***: por defecto
+
+## Funciones de calculos con grupos
+Estas funciones lo que hacen son calculos en vertical en la tabla, es decir, de los valores correspondientes a una columna:
+
+    - COUNT(expresion)         ->      Cuenta, ignora nulos
+    - SUM(expresion)           ->      Suma los valores de la expresion
+    - AVG(expresion)           ->      Media aritmetica
+    - MIN(expresion)           ->      Minimo valor
+    - MAX(expresion)           ->      Maximo valor
+    - STDDEV(expresion)        ->      Desviacion estandard
+    - VARIANCE(expresion)      ->      Varianza
