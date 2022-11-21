@@ -110,3 +110,6 @@ SELECT campo FROM tabla WHERE campo = &NOMBRE_VARIABLE;
     - TO_CHAR(expresion [,'formato'])
     - TO_NUMBER()
     - TO_DATE()
+
+### RELACIONES ENTRE TABLAS
+    SELECT campo1, campo2 FROM tabla1, tabla2 WHERE key1=key2;
