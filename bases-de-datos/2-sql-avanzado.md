@@ -225,8 +225,18 @@ Por ejemplo, queremos saber el nombre de un empleado y el nombre de su jefe:
 | 2 | Carla | 1 | 1 | Forner | 
 | 2 | Carla | 1 | 2 | Carla | 2
 
-*... ON(E.MANAGER=J.EMPLOYEE_ID)*
+*... ON(E.MANAGER_ID=J.EMPLOYEE_ID)*
 
 | E.EMPID | E.LAST_NAME | E.MANID | J.EMPID | J.LAST_NAME | J.MANID
 |--|--|--|--|--|--|
 | 2 | Carla | 1 | 1 | Forner | 
+
+### Agrupacion avanzada
+
+Sea tabla *MUNICIPIOS*:
+|CODAUT|CODPRO|CODMUN|NHAB
+|--|--|--|--
+||||
+||||
+||||
+||||
