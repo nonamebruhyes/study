@@ -45,7 +45,7 @@ SELECT campo FROM tabla WHERE campo = &NOMBRE_VARIABLE;
 ## FUNCIONES
 
 ### Funciones numericas
-~~~
+
 - ROUND(n, decimales)         ->      Redondea al numero mas proximo
 - TRUNC(n, decimales)         ->      Corta a partir de los decimales
 - MOD(n1, n2)                 ->      Devuelve el resto
@@ -65,56 +65,50 @@ SELECT campo FROM tabla WHERE campo = &NOMBRE_VARIABLE;
 - SINH()
 - COSH()
 - TANH()
-~~~
+
 ### Funciones de caracteres
 
 #### Conversion
-
-- LOWER()
-- UPPER()
-- INITCAP()
+    - LOWER()
+    - UPPER()
+    - INITCAP()
 
 #### Transformacion
-
-- RTRIM()
-- LTRIM()
-- TRIM()
-- SUBSTR()
-- LENGTH()
-- REPLACE()
-- LPAD()
-- RPAD()
-- REVERSE()
-- INSTR()
-- TRANSLATE()
+    - RTRIM()
+    - LTRIM()
+    - TRIM()
+    - SUBSTR()
+    - LENGTH()
+    - REPLACE()
+    - LPAD()
+    - RPAD()
+    - REVERSE()
+    - INSTR()
+    - TRANSLATE()
 
 #### Altres
-
-- ASCII()
-- CHR()
-- SOUNDEX()
+    - ASCII()
+    - CHR()
+    - SOUNDEX()
     
 #### Funciones con nulos
-
-- NVL(valor, sustituto)                   ->      Si valor es null devuelve sustituto si no valor
-- NVL2(valor, sustituto1, sustituto2)     ->      Si valor es null devuelve sustituto1 si no sustituto2
-- NULLIF(valor1, valor2)                  ->      Si valor1 = valor2 devuelve null si no valor1
-- COALESCE(listaExpresiones)              ->      Devuelve la primera de las expresiones no nula
+    - NVL(valor, sustituto)                   ->      Si valor es null devuelve sustituto si no valor
+    - NVL2(valor, sustituto1, sustituto2)     ->      Si valor es null devuelve sustituto1 si no sustituto2
+    - NULLIF(valor1, valor2)                  ->      Si valor1 = valor2 devuelve null si no valor1
+    - COALESCE(listaExpresiones)              ->      Devuelve la primera de las expresiones no nula
 
 #### Funciones con fecha
-
-- ADD_MONTHS(fecha, n)
-- MONTHS_BETWEEN(fecha1, fecha2)
-- NEXT_DAY(fecha, dia)
-- LAST_DAY(fecha)
-- EXTRACT(valor FROM fecha)
-- GREATEST(fecha1, fecha2, ...)
-- LEAST(fech1, fecha2, ...)
-- ROUND(fecha [,'formato'])
-- TRUNC(fecha [,'formato'])
+    - ADD_MONTHS(fecha, n)
+    - MONTHS_BETWEEN(fecha1, fecha2)
+    - NEXT_DAY(fecha, dia)
+    - LAST_DAY(fecha)
+    - EXTRACT(valor FROM fecha)
+    - GREATEST(fecha1, fecha2, ...)
+    - LEAST(fech1, fecha2, ...)
+    - ROUND(fecha [,'formato'])
+    - TRUNC(fecha [,'formato'])
 
 #### Funciones de conversion
-
-- TO_CHAR(expresion [,'formato'])
-- TO_NUMBER()
-- TO_DATE()
+    - TO_CHAR(expresion [,'formato'])
+    - TO_NUMBER()
+    - TO_DATE()
