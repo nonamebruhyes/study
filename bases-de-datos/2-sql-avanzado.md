@@ -219,4 +219,4 @@ Por ejemplo, queremos saber el nombre de un empleado y el nombre de su jefe:
 
 
 | EMPID | LAST_NAME | MANID | EMPID | LAST_NAME | MANID
-|--|--|--|--|--|--|--
+|--|--|--|--|--|--|
