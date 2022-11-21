@@ -1,6 +1,7 @@
 # SQL AVANZADO
 
 1. [Relaciones entre tablas](#id1)
+2. [JOIN](#id2)
 
 ## RELACIONES ENTRE TABLAS <a name="id1" />
     SELECT campo1, campo2 FROM tabla1, tabla2 WHERE key1=key2;
@@ -22,7 +23,7 @@ Departamentos:
 
 Cuando realizamos la siguiente sentencia:
 
-    SELECT * FROM EMPLEADOS, DEPARTAMENTOS
+    SELECT * FROM EMPLEADOS, DEPARTAMENTOS;
 
 Oracle hace lo que se llama el producto cartesiano de las dos tablas por lo que la tabla resultante quedaria algo asi:
 
@@ -38,3 +39,7 @@ Oracle hace lo que se llama el producto cartesiano de las dos tablas por lo que 
 Como vemos lo anterior no tiene mucho sentido y solo nos interesaria quedarnos con los registros en los que el CODDEP sea igual. Para esto utilizamos una clausula WHERE en la que igualemos los dos campos:
 
     SELECT * FROM EMPLEADOS, DEPARTAMENTOS WHERE EMPLEADOS.CODDEP = DEPARTAMENTOS.CODDEP;
+
+    SELECT * FROM EMPLEADOS E, DEPARTAMENTOS D WHERE E.CODDEP = D.CODDEP;
+
+## JOIN <a name="id2" />
