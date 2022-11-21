@@ -51,6 +51,13 @@ Con la sentencia anterior la tabla resultante nos quedaria de la siguiente maner
 | 1003 | Mitja | 20 | 20 | Vendes |
 
 ## JOIN <a name="id2" />
-Siguiendo con el ejemplo anterior, la sintaxis para diferenciar de WHERE las condiciones de seleccion de registros es usando la clausula JOIN
+Siguiendo con el ejemplo anterior, la sintaxis para diferenciar de WHERE las condiciones de seleccion de registros es usando la clausula JOIN. En el caso de que el campo que las relaciona se llame igual:
 
     ...FROM EMPLEADOS E JOIN DEPARTMENTS D USING(DEPARTMENT_ID)...;
+
+En el caso contrario:
+
+    ... FROM EMPLEADOS E JOIN DEPARTMENTS D ON(E.CODDEP=D.CD)...;
+
+### Modificaciones de JOIN
+Hay veces en la que una de las tablas puede tener el campo que las relaciona con valor nul o incluso que no coincida ninguno de la otra tabla con ese campo. Para eso tenemos las sentencias: ***OUTER JOIN***, ***LEFT JOIN***, ***RIGHT JOIN***.
