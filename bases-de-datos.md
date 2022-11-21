@@ -8,7 +8,7 @@
     DISTINCT    ->      SELECT DISTINCT campo FROM tabla;   Saca los diferentes valores de un campo
     AS          ->      SELECT campo AS apodo FROM tabla;   Le pone un apodo a un campo
 
-## SELECT campos FROM tabla WHERE condicion;
+## SELECT campos FROM tabla WHERE condicion; <a name="id2" />
 
     >    mayor
     <    menor
@@ -29,7 +29,7 @@
     IS NULL         ->      campo = NULL  
     IS NOT NULL     ->      campo <> NULL
 
-## SELECT campo FROM tabla ORDER BY campo ASC|DESC;
+## SELECT campo FROM tabla ORDER BY campo ASC|DESC; <a name="id3" />
 
 Hace una ordenacion de la tabla segun el campo que le pongamos
 
@@ -38,14 +38,14 @@ Hace una ordenacion de la tabla segun el campo que le pongamos
     NULLS FIRST     ->      muestra los que tienen el valor null al principio
     NULLS LAST      ->      muestro los que tienen el valor null al final
 
-## &NOMBRE_VARIABLE
+## &NOMBRE_VARIABLE <a name="id4" />
 
 Dejamos abierto el valor, por ejemplo para una where y se pedira cuando
 se ejecute la consulta.
 
     SELECT campo FROM tabla WHERE campo = &NOMBRE_VARIABLE;
 
-## FUNCIONES
+## FUNCIONES <a name="id5" />
 ### Funciones numericas
     - ROUND(n, decimales)         ->      Redondea al numero mas proximo
     - TRUNC(n, decimales)         ->      Corta a partir de los decimales
@@ -114,5 +114,5 @@ se ejecute la consulta.
     - TO_NUMBER()
     - TO_DATE()
 
-### RELACIONES ENTRE TABLAS
+## RELACIONES ENTRE TABLAS
     SELECT campo1, campo2 FROM tabla1, tabla2 WHERE key1=key2;
