@@ -43,28 +43,26 @@ se ejecute la consulta.
 SELECT campo FROM tabla WHERE campo = &NOMBRE_VARIABLE;
 
 ## FUNCIONES
-
 ### Funciones numericas
-
-- ROUND(n, decimales)         ->      Redondea al numero mas proximo
-- TRUNC(n, decimales)         ->      Corta a partir de los decimales
-- MOD(n1, n2)                 ->      Devuelve el resto
-- POWER(valor, exponente)     ->      Eleva el valor al exponente
-- SIGN(n)                     ->      1 si positivo, 0 si negativo
-- SQRT()
-- ABS()
-- EXP()
-- LN()
-- LOG()
-- SIN()
-- COS()
-- TAN()
-- ACOS()
-- ASIN()
-- ATAN()
-- SINH()
-- COSH()
-- TANH()
+    - ROUND(n, decimales)         ->      Redondea al numero mas proximo
+    - TRUNC(n, decimales)         ->      Corta a partir de los decimales
+    - MOD(n1, n2)                 ->      Devuelve el resto
+    - POWER(valor, exponente)     ->      Eleva el valor al exponente
+    - SIGN(n)                     ->      1 si positivo, 0 si negativo
+    - SQRT()
+    - ABS()
+    - EXP()
+    - LN()
+    - LOG()
+    - SIN()
+    - COS()
+    - TAN()
+    - ACOS()
+    - ASIN()
+    - ATAN()
+    - SINH()
+    - COSH()
+    - TANH()
 
 ### Funciones de caracteres
 
