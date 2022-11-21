@@ -72,6 +72,8 @@ Hay veces en la que una de las tablas puede tener el campo que las relaciona con
 3. ***OUTER JOIN***: esta sentencia junta las dos anteriores
 4. ***INNER JOIN***: por defecto
 
+[JOINS](https://ingdesoftware.wpenginepowered.com/wp-content/uploads/2018/07/sqljoin.jpeg)
+
 ## Funciones de calculos con grupos <a name="id3" />
 Estas funciones lo que hacen son calculos en vertical en la tabla, es decir, de los valores correspondientes a una columna:
 
@@ -156,8 +158,9 @@ Por ejemplo, quiero saber los lugares de trabajo en los cuales algun trabajador 
                 E.SALARY=J.MIN_SALARY
         );
 
+La SELECT principal va leyendo fila a fila y para cada una de ellas busca en la tabla de empleados si existe alguno, el salario del qual coincida con el salario minimo que he leido en la consulta principal.
 
 ## Operadores de conjunto <a name="id6" />
-
+Estas consultas utilizan al menos dos SELECT resultados de los cuales se pueden combinar para formar una unica consulta.
 
 ## Consultas avanzadas <a name="id7" />
