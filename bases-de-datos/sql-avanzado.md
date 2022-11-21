@@ -131,7 +131,7 @@ Por ejemplo, si queremos sacar el nombre de los empleados que cobran mas que el 
 
 Evidentemente la SUBSELECT anterior solo devuelve un resultado pero si devolviera varios nos daria un error. No podriamos compararla directamente, tenemos que añadir estos operadores:
 
-1. ANY o SOME: compara con cualquier registro de la subconsulta. La instruccion es valida si hay un registro de la subconsulta que permite que la comparacion sea correcta.
-2. ALL: compara con todos los registros de la subconsulta. La instruccion es cierta si es cierta toda comparacion
-3. IN: no usa comparador, ya que sirve para comprobar si un valor se encuentra en el resultado de la subconsulta
-4. NOT IN: Comprueba si un valor no se encuentra en la subconsulta
+1. ***ANY*** o ***SOME***: compara con cualquier registro de la subconsulta. La instruccion es valida si hay un registro de la subconsulta que permite que la comparacion sea correcta.
+2. ***ALL***: compara con todos los registros de la subconsulta. La instruccion es cierta si es cierta toda comparacion
+3. ***IN***: no usa comparador, ya que sirve para comprobar si un valor se encuentra en el resultado de la subconsulta
+4. ***NOT IN***: Comprueba si un valor no se encuentra en la subconsulta
