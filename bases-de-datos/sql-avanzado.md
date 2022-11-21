@@ -4,3 +4,14 @@
 
 ## RELACIONES ENTRE TABLAS <a name="id1" />
     SELECT campo1, campo2 FROM tabla1, tabla2 WHERE key1=key2;
+
+Dadas las tablas:
+
+| NEMP | NOM | CODDEP |
+| 1001 | Juan | 10 |
+| 1001 | Pedro | 20 |
+| 1001 | Mitja | 20 |
+
+| CODDEP | DESCRIPCIO |
+| 10 | Compres |
+| 20 | Vendes |
