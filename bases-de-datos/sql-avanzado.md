@@ -2,6 +2,8 @@
 
 1. [Relaciones entre tablas](#id1)
 2. [JOIN](#id2)
+3. [Funciones de calculo con grupos](#id3)
+4. [Agrupaciones](#id4)
 
 ## RELACIONES ENTRE TABLAS <a name="id1" />
     SELECT campo1, campo2 FROM tabla1, tabla2 WHERE key1=key2;
@@ -67,7 +69,7 @@ Hay veces en la que una de las tablas puede tener el campo que las relaciona con
 3. ***OUTER JOIN***: esta sentencia junta las dos anteriores
 4. ***INNER JOIN***: por defecto
 
-## Funciones de calculos con grupos
+## Funciones de calculos con grupos <a name="id3" />
 Estas funciones lo que hacen son calculos en vertical en la tabla, es decir, de los valores correspondientes a una columna:
 
     - COUNT(expresion)         ->      Cuenta, ignora nulos
@@ -77,3 +79,5 @@ Estas funciones lo que hacen son calculos en vertical en la tabla, es decir, de 
     - MAX(expresion)           ->      Maximo valor
     - STDDEV(expresion)        ->      Desviacion estandard
     - VARIANCE(expresion)      ->      Varianza
+
+## Agrupaciones <a name="id4" />
