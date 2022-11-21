@@ -2,6 +2,9 @@
 
 1. [SELECT](#id1)
 2. [WHERE](#id2)
+3. [ORDER BY](#id3)
+4. [Valor de variable abierto](#id4)
+5. [Funciones](#id5)
 
 ## SELECT campos FROM tabla; <a name="id1" />
 
