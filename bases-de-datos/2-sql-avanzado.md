@@ -8,7 +8,7 @@
 6. [Operadores de conjunto](#id6)
 7. [Consultas avanzadas](#id7)
 
-## RELACIONES ENTRE TABLAS <a name="id1" />
+## Relaciones entre tablas <a name="id1" />
     SELECT campo1, campo2 FROM tabla1, tabla2 WHERE key1=key2;
 
 Empleados:
