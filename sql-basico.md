@@ -5,6 +5,7 @@
 3. [ORDER BY](#id3)
 4. [Valor de variable abierto](#id4)
 5. [Funciones](#id5)
+6. [JOIN](#id6)
 
 ## SELECT campos FROM tabla; <a name="id1" />
 
