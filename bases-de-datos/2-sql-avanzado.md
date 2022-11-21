@@ -234,7 +234,7 @@ Por ejemplo, queremos saber el nombre de un empleado y el nombre de su jefe:
 ### Agrupacion avanzada (ROLLUP / CUBE)
 
 Sea tabla *MUNICIPIOS*:
-|CODAUT|CODPRO|CODMUN|NHAB
+|CODAUT|CODPRO|CODMUN|NUMHAB
 |--|--|--|--
 |1|1|1|12
 |1|2|2|14
@@ -244,7 +244,7 @@ Sea tabla *MUNICIPIOS*:
 Realizamos la siguiente SELECT:
 
     SELECT
-        CODAUT, CODPRO, SUM(NHAB)
+        CODAUT, CODPRO, SUM(NUMHAB)
     FROM
         MUNICIPIOS
     GROUP BY
@@ -253,42 +253,14 @@ Realizamos la siguiente SELECT:
 
 ***ROLLUP*** lo que hara sera sacar los habitantes por cada par de valores autonomia y provincia, habitantes por autonomia y el global.
 
-[
-  {
-    "CODAUT": "1",
-    "CODPRO": "1",
-    "SUM(NUMHAB)": "12"
-  },
-  {
-    "CODAUT": "1",
-    "CODPRO": "2",
-    "SUM(NUMHAB)": "14"
-  },
-  {
-    "CODAUT": "1",
-    "CODPRO": "",
-    "SUM(NUMHAB)": "26"
-  },
-  {
-    "CODAUT": "2",
-    "CODPRO": "3",
-    "SUM(NUMHAB)": "12"
-  },
-  {
-    "CODAUT": "2",
-    "CODPRO": "4",
-    "SUM(NUMHAB)": "19"
-  },
-  {
-    "CODAUT": "2",
-    "CODPRO": "",
-    "SUM(NUMHAB)": "31"
-  },
-  {
-    "CODAUT": "",
-    "CODPRO": "",
-    "SUM(NUMHAB)": "57"
-  }
-]
+| CODAUT | CODPRO | SUM(NUMHAB)
+|--|--|--
+|1|1|12
+|1|2|14
+|1| |26
+|2|3|12
+|2|4|19
+|2| |31
+| | |57
 
 ***CUBE*** sacaria tambien totales por el segundo agrupamiento.
