@@ -163,4 +163,8 @@ La SELECT principal va leyendo fila a fila y para cada una de ellas busca en la 
 ## Operadores de conjunto <a name="id6" />
 Estas consultas utilizan al menos dos SELECT resultados de los cuales se pueden combinar para formar una unica consulta.
 
+1. ***UNION***: une completamente ambas consultas
+2. ***INTERSECT***: une unicamente lo que coincide en ambas consultas
+3. ***MINUS***: muestra lo de la consulta de la izquierda menos lo que coincida con la consulta de la derecha
+
 ## Consultas avanzadas <a name="id7" />
