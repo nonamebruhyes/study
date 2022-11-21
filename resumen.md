@@ -45,7 +45,7 @@ SELECT campo FROM tabla WHERE campo = &NOMBRE_VARIABLE;
 ## FUNCIONES
 
 ### Funciones numericas
-
+~~~
 - ROUND(n, decimales)         ->      Redondea al numero mas proximo
 - TRUNC(n, decimales)         ->      Corta a partir de los decimales
 - MOD(n1, n2)                 ->      Devuelve el resto
@@ -65,7 +65,7 @@ SELECT campo FROM tabla WHERE campo = &NOMBRE_VARIABLE;
 - SINH()
 - COSH()
 - TANH()
-
+~~~
 ### Funciones de caracteres
 
 #### Conversion
