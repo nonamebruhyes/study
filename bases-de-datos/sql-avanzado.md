@@ -72,7 +72,7 @@ Hay veces en la que una de las tablas puede tener el campo que las relaciona con
 3. ***OUTER JOIN***: esta sentencia junta las dos anteriores
 4. ***INNER JOIN***: por defecto
 
-<image src="https://ingdesoftware.wpenginepowered.com/wp-content/uploads/2018/07/sqljoin.jpeg" alt="Descripción de la imagen">
+<image src="https://ingdesoftware.wpenginepowered.com/wp-content/uploads/2018/07/sqljoin.jpeg" alt="Descripción de la imagen" height="100">
 
 ## Funciones de calculos con grupos <a name="id3" />
 Estas funciones lo que hacen son calculos en vertical en la tabla, es decir, de los valores correspondientes a una columna:
