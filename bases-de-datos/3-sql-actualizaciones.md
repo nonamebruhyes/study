@@ -30,6 +30,22 @@ Para crear una secuencia:
 ### Uso de una secuencia
 Tenemos ***NEXTVAL***, que nos dara el siguiente valor de la secuencia y actualizara al siguiente; y ***CURRVAL***, que nos devuelve el valor actual, es decir, el ultimo que seha gastado. 
 
+    SELECT DEPARTMENTS_SEQ.NEXTVAL FROM DUAL;
+
+    SELECT DEPARTMENTS_SEQ.CURRVAL FROM DUAL;
+
+## UPDATE
+La instruccion ***UPDATE*** modifica los registros de una tabla
+
+    UPDATE tabla
+    SET columna1=valor1 [,columna2=valor2...]
+    [WHERE condicion];
+
+## DELETE
+Esta instruccion elimina los registres de una tabla:
+
+    DELETE [FROM] tabla [WHERE condicion]; 
+
 ## Estado de los datos durante la transaccion
 El manejo de las transacciones es una de las cuestiones mas complejas para un *SGBD*. Los mas poderosos son capaces de gestionar las transacciones en cumplimiento de la norma que asegura estos cuatro aspectos (*ACID*):
 1. **Atomicidad**: que ninguna instruccion se quede a medio hacer
