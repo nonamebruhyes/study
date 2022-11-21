@@ -1,0 +1,10 @@
+<!ELEMENT Estudiantes (Estudiant*)>
+    <!ELEMENT Estudiant (Usuari,NomComplet,Email,Titulacion,Hores,Estat,Comentaris)>
+        <!ATTLIST Estudiant id CDATA #REQUIRED>
+        <!ELEMENT Usuari (#PCDATA)>
+        <!ELEMENT NomComplet (#PCDATA)>
+        <!ELEMENT Email (#PCDATA)>
+        <!ELEMENT Titulacion (#PCDATA)>
+        <!ELEMENT Hores (#PCDATA)>
+        <!ELEMENT Estat (#PCDATA)>
+        <!ELEMENT Comentaris (#PCDATA)>

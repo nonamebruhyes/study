@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Club SYSTEM "clubDeportivo.dtd">
+
+<Club xmlns:dir="directiva.xml"
+      xmlns:tec="cuerpoTecnico.xml"
+      xmlns:pla="plantilla.xml">
+    <Nombre></Nombre>
+    <Deporte></Deporte>
+    <AñoFundacion></AñoFundacion>
+    <Mail></Mail>
+    <Telefono></Telefono>
+    <dir:JuntaDirectiva>
+        <dir:Persona rol="presidente">
+            <dir:Nombre></dir:Nombre>
+            <dir:Apellidos></dir:Apellidos>
+            <dir:Dni></dir:Dni>
+            <dir:Telefono></dir:Telefono>
+            <dir:Mail></dir:Mail>
+            <dir:Edad></dir:Edad>
+            <dir:FechaNacimiento></dir:FechaNacimiento>
+            <dir:Nacionalidad></dir:Nacionalidad>
+        </dir:Persona>
+        <dir:Persona rol="secretario">
+            <dir:Nombre></dir:Nombre>
+            <dir:Apellidos></dir:Apellidos>
+            <dir:Dni></dir:Dni>
+            <dir:Telefono></dir:Telefono>
+            <dir:Mail></dir:Mail>
+            <dir:Edad></dir:Edad>
+            <dir:FechaNacimiento></dir:FechaNacimiento>
+            <dir:Nacionalidad></dir:Nacionalidad>
+        </dir:Persona>
+        <dir:Persona rol="miembro">
+            <dir:Nombre></dir:Nombre>
+            <dir:Apellidos></dir:Apellidos>
+            <dir:Dni></dir:Dni>
+            <dir:Telefono></dir:Telefono>
+            <dir:Mail></dir:Mail>
+            <dir:Edad></dir:Edad>
+            <dir:FechaNacimiento></dir:FechaNacimiento>
+            <dir:Nacionalidad></dir:Nacionalidad>
+        </dir:Persona>
+        <dir:Persona rol="miembro">
+            <dir:Nombre></dir:Nombre>
+            <dir:Apellidos></dir:Apellidos>
+            <dir:Dni></dir:Dni>
+            <dir:Telefono></dir:Telefono>
+            <dir:Mail></dir:Mail>
+            <dir:Edad></dir:Edad>
+            <dir:FechaNacimiento></dir:FechaNacimiento>
+            <dir:Nacionalidad></dir:Nacionalidad>
+        </dir:Persona><dir:Persona rol="miembro">
+            <dir:Nombre></dir:Nombre>
+            <dir:Apellidos></dir:Apellidos>
+            <dir:Dni></dir:Dni>
+            <dir:Telefono></dir:Telefono>
+            <dir:Mail></dir:Mail>
+            <dir:Edad></dir:Edad>
+            <dir:FechaNacimiento></dir:FechaNacimiento>
+            <dir:Nacionalidad></dir:Nacionalidad>
+        </dir:Persona>
+    </dir:JuntaDirectiva>
+    <tec:CuerpoTecnico>
+        <tec:Persona rol="entrenador">
+            <tec:Nombre></tec:Nombre>
+            <tec:Apellidos></tec:Apellidos>
+            <tec:Dni></tec:Dni>
+            <tec:Telefono></tec:Telefono>
+            <tec:Mail></tec:Mail>
+            <tec:Edad></tec:Edad>
+            <tec:FechaNacimiento></tec:FechaNacimiento>
+            <tec:Nacionalidad></tec:Nacionalidad>
+        </tec:Persona>
+        <tec:Persona rol="asistente">
+            <tec:Nombre></tec:Nombre>
+            <tec:Apellidos></tec:Apellidos>
+            <tec:Dni></tec:Dni>
+            <tec:Telefono></tec:Telefono>
+            <tec:Mail></tec:Mail>
+            <tec:Edad></tec:Edad>
+            <tec:FechaNacimiento></tec:FechaNacimiento>
+            <tec:Nacionalidad></tec:Nacionalidad>
+        </tec:Persona>
+        <tec:Persona rol="medico">
+            <tec:Nombre></tec:Nombre>
+            <tec:Apellidos></tec:Apellidos>
+            <tec:Dni></tec:Dni>
+            <tec:Telefono></tec:Telefono>
+            <tec:Mail></tec:Mail>
+            <tec:Edad></tec:Edad>
+            <tec:FechaNacimiento></tec:FechaNacimiento>
+            <tec:Nacionalidad></tec:Nacionalidad>
+        </tec:Persona>
+    </tec:CuerpoTecnico>
+    <pla:Plantilla>
+        <pla:Persona>
+            <pla:Nombre></pla:Nombre>
+            <pla:Apellidos></pla:Apellidos>
+            <pla:Dni></pla:Dni>
+            <pla:Telefono></pla:Telefono>
+            <pla:Mail></pla:Mail>
+            <pla:Edad></pla:Edad>
+            <pla:FechaNacimiento></pla:FechaNacimiento>
+            <pla:Nacionalidad></pla:Nacionalidad>
+        </pla:Persona>
+        <pla:Persona>
+            <pla:Nombre></pla:Nombre>
+            <pla:Apellidos></pla:Apellidos>
+            <pla:Dni></pla:Dni>
+            <pla:Telefono></pla:Telefono>
+            <pla:Mail></pla:Mail>
+            <pla:Edad></pla:Edad>
+            <pla:FechaNacimiento></pla:FechaNacimiento>
+            <pla:Nacionalidad></pla:Nacionalidad>
+        </pla:Persona>
+        <pla:Persona>
+            <pla:Nombre></pla:Nombre>
+            <pla:Apellidos></pla:Apellidos>
+            <pla:Dni></pla:Dni>
+            <pla:Telefono></pla:Telefono>
+            <pla:Mail></pla:Mail>
+            <pla:Edad></pla:Edad>
+            <pla:FechaNacimiento></pla:FechaNacimiento>
+            <pla:Nacionalidad></pla:Nacionalidad>
+        </pla:Persona>
+    </pla:Plantilla>
+</Club>

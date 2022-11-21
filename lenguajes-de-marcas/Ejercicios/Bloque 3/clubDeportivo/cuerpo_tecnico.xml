@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<CuerpoTecnico xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="CuerpoTecnico.xsd"
+                id="CT923">
+    <Persona id="YJI845" cargo="Entrenador"/>
+    <Persona id="VSK034" cargo="Asistente"/>
+    <Persona id="CZP231" cargo="Medico"/>
+</CuerpoTecnico>

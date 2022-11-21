@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Cliente SYSTEM "Cliente.dtd">
+<?xml-model href="Cliente.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<Cliente activo="false">
+    <Nombre></Nombre>
+    <Direccion>Gregal 18</Direccion>
+    <CodigoPostal>46590</CodigoPostal>
+    <Telefono>619235611</Telefono>
+    <Vendedor></Vendedor>
+    <TipoPersona>Fisica</TipoPersona>
+</Cliente>

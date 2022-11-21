@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE producto SYSTEM "producto.dtd">
+
+<producto>
+	<id></id>
+	<nombre></nombre>
+	<descripcion></descripcion>
+	<alergenos></alergenos>
+	<precio></precio>
+</producto>

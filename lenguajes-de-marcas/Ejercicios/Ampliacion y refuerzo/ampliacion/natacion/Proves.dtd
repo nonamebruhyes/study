@@ -1,0 +1,7 @@
+<!ELEMENT Proves (Prova*)>
+    <!ELEMENT Prova (Nom,Descripcio,Tipus,Data)>
+        <!ATTLIST Prova id ID #REQUIRED>
+        <!ELEMENT Nom (#PCDATA)>
+        <!ELEMENT Descripcio (#PCDATA)>
+        <!ELEMENT Tipus (#PCDATA)>
+        <!ELEMENT Data (#PCDATA)>

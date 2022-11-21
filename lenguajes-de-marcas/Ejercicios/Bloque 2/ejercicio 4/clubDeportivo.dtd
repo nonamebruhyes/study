@@ -1,0 +1,49 @@
+<!ELEMENT Club (Nombre, Deporte, AñoFundacion, Mail, Telefono,
+                dir:JuntaDirectiva, tec:CuerpoTecnico, pla:Plantilla)>
+<!ATTLIST Club xmlns:dir CDATA #REQUIRED>
+<!ATTLIST Club xmlns:tec CDATA #REQUIRED>
+<!ATTLIST Club xmlns:pla CDATA #REQUIRED>
+
+  <!ELEMENT Nombre (#PCDATA)>
+  <!ELEMENT Deporte (#PCDATA)>
+  <!ELEMENT AñoFundacion (#PCDATA)>
+  <!ELEMENT Mail (#PCDATA)>
+  <!ELEMENT Telefono (#PCDATA)>
+
+  <!ELEMENT dir:JuntaDirectiva (dir:Persona)*>
+    <!ELEMENT dir:Persona (dir:Nombre, dir:Apellidos, dir:Dni, dir:Telefono,
+                           dir:Mail, dir:Edad, dir:FechaNacimiento, dir:Nacionalidad)>
+    <!ATTLIST dir:Persona rol (presidente|secretario|miembro) #REQUIRED>
+      <!ELEMENT dir:Nombre (#PCDATA)>
+      <!ELEMENT dir:Apellidos (#PCDATA)>
+      <!ELEMENT dir:Dni (#PCDATA)>
+      <!ELEMENT dir:Telefono (#PCDATA)>
+      <!ELEMENT dir:Mail (#PCDATA)>
+      <!ELEMENT dir:Edad (#PCDATA)>
+      <!ELEMENT dir:FechaNacimiento (#PCDATA)>
+      <!ELEMENT dir:Nacionalidad (#PCDATA)>
+
+  <!ELEMENT tec:CuerpoTecnico (tec:Persona)*>
+    <!ELEMENT tec:Persona (tec:Nombre, tec:Apellidos, tec:Dni, tec:Telefono,
+                           tec:Mail, tec:Edad, tec:FechaNacimiento, tec:Nacionalidad)>
+    <!ATTLIST tec:Persona rol (entrenador|asistente|medico) #REQUIRED>
+      <!ELEMENT tec:Nombre (#PCDATA)>
+      <!ELEMENT tec:Apellidos (#PCDATA)>
+      <!ELEMENT tec:Dni (#PCDATA)>
+      <!ELEMENT tec:Telefono (#PCDATA)>
+      <!ELEMENT tec:Mail (#PCDATA)>
+      <!ELEMENT tec:Edad (#PCDATA)>
+      <!ELEMENT tec:FechaNacimiento (#PCDATA)>
+      <!ELEMENT tec:Nacionalidad (#PCDATA)>
+
+  <!ELEMENT pla:Plantilla (pla:Persona)*>
+    <!ELEMENT pla:Persona (pla:Nombre, pla:Apellidos, pla:Dni, pla:Telefono, pla:Mail,
+                           pla:Edad, pla:FechaNacimiento, pla:Nacionalidad)>
+      <!ELEMENT pla:Nombre (#PCDATA)>
+      <!ELEMENT pla:Apellidos (#PCDATA)>
+      <!ELEMENT pla:Dni (#PCDATA)>
+      <!ELEMENT pla:Telefono (#PCDATA)>
+      <!ELEMENT pla:Mail (#PCDATA)>
+      <!ELEMENT pla:Edad (#PCDATA)>
+      <!ELEMENT pla:FechaNacimiento (#PCDATA)>
+      <!ELEMENT pla:Nacionalidad (#PCDATA)>

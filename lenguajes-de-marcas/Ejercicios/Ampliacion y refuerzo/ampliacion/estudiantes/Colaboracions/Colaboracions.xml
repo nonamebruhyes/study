@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- 
+<!DOCTYPE Colaboracions SYSTEM "Colaboracions.dtd">
+-->
+<Colaboracions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Colaboracions.xsd">
+    <Colaboracio id="AA123" refPeticio="AA123">
+        <Imparteix>AA12345678</Imparteix>
+        <Reb>AA12345678</Reb>
+        <Assignatura>sistinform</Assignatura>
+        <Nivell>Expert</Nivell>
+        <Hores>1</Hores>
+        <Estat>Actiu</Estat>
+        <Avaluacio>3</Avaluacio>
+        <DataInici>2002-09-24</DataInici>
+        <DataFin>2003-09-24</DataFin>
+    </Colaboracio>
+    <Colaboracio id="AB123" refPeticio="AA123">
+        <Imparteix>BB12345678</Imparteix>
+        <Reb>AA12345678</Reb>
+        <Assignatura>lenguajesmarcas</Assignatura>
+        <Nivell>Principiant</Nivell>
+        <Hores>1</Hores>
+        <Estat>Actiu</Estat>
+        <Avaluacio>4</Avaluacio>
+        <DataInici>2002-09-24</DataInici>
+        <DataFin>2003-09-24</DataFin>
+    </Colaboracio>
+</Colaboracions>

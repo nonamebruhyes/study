@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<?xml-model href="Proves.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!DOCTYPE Proves SYSTEM "Proves.dtd">
+<Proves>
+    <Prova id="AA1234">
+        <Nom>Nombre de la Prueba</Nom>
+        <Descripcio>Descripcion correspondiente a la prueba</Descripcio>
+        <Tipus>Tipo de prueba</Tipus>
+        <Data>1999-01-13</Data>
+    </Prova>
+    <Prova id="BB1234">
+        <Nom>Nombre de la Prueba</Nom>
+        <Descripcio>Descripcion correspondiente a la prueba</Descripcio>
+        <Tipus>Tipo de prueba</Tipus>
+        <Data>1999-01-13</Data>
+    </Prova>
+</Proves>

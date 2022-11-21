@@ -1,0 +1,7 @@
+<!ELEMENT Nadadors (Nadador*)>
+<!ELEMENT Nadador (Nom,Pais,Edad,Genero)>
+<!ATTLIST Nadador id ID #REQUIRED>
+<!ELEMENT Nom (#PCDATA)>
+<!ELEMENT Pais (#PCDATA)>
+<!ELEMENT Edad (#PCDATA)>
+<!ELEMENT Genero (#PCDATA)>

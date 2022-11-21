@@ -1,0 +1,4 @@
+<!ELEMENT Vendedor (Nombre, Telefono, Zona)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Telefono (#PCDATA)>
+    <!ELEMENT Zona (#PCDATA)>

@@ -1,0 +1,6 @@
+<!ELEMENT Encargo (Cliente, Vendedor, Estado, Precio, Articulo+)>
+    <!ELEMENT Cliente (#PCDATA)>
+    <!ELEMENT Vendedor (#PCDATA)>
+    <!ELEMENT Estado (#PCDATA)>
+    <!ELEMENT Precio (#PCDATA)>
+    <!ELEMENT Articulo (#PCDATA)>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Factura SYSTEM "Factura.dtd">
+<?xml-model href="Factura.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<Factura pagado="false">
+    <Empresa>&Empresa;</Empresa>
+    <Fecha>&Fecha;</Fecha>
+    <Cliente></Cliente>
+    <Vendedor></Vendedor>
+    <Precio>000,00€</Precio>
+    <Iva></Iva>
+    <Descuento></Descuento>
+    <Web>&WEB;</Web>
+</Factura>

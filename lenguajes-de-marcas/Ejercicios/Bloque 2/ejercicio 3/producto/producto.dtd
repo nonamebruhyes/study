@@ -1,0 +1,6 @@
+<!ELEMENT producto (id, nombre, descripcion, alergenos, precio)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT alergenos (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>

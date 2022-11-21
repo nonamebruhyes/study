@@ -1,0 +1,16 @@
+<!ELEMENT menu (entrantes, primeros, segundos, postres, bebidas)>
+<!ATTLIST menu precio CDATA #REQUIRED>
+<!ATTLIST menu horario CDATA #REQUIRED>
+
+    <!ELEMENT entrantes (producto*)>
+    <!ELEMENT primeros (producto*)>
+    <!ELEMENT segundos (producto*)>
+    <!ELEMENT postres (producto*)>
+    <!ELEMENT bebidas (producto*)>
+
+        <!ELEMENT producto (id, nombre, descripcion, alergenos, precio)>
+            <!ELEMENT id (#PCDATA)>
+            <!ELEMENT nombre (#PCDATA)>
+            <!ELEMENT descripcion (#PCDATA)>
+            <!ELEMENT alergenos (#PCDATA)>
+            <!ELEMENT precio (#PCDATA)>

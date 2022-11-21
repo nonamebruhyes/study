@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<DatosClub  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="DatosClub.xsd"
+            id="DC034">
+        <Nombre>Nombre del club</Nombre>
+        <Deporte>Modalidad deportiva</Deporte>
+        <AñoFundacion>1973</AñoFundacion>
+        <Mail>direccion@dominio.com</Mail>
+        <Telefono>987654321</Telefono>
+</DatosClub>

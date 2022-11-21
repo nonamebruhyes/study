@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<JuntaDirectiva xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="JuntaDirectiva.xsd"
+    id="JD007">
+    <Persona id="TDA048" cargo="Presidente" />
+    <Persona id="GAH478" cargo="Secretario" />
+    <Persona id="CKI034" cargo="Vocal" />
+    <Persona id="HLY759" cargo="Vocal" />
+</JuntaDirectiva>

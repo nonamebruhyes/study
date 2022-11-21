@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<?xml-model href="Classificacions.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!DOCTYPE Classificacions SYSTEM "Classificacions.dtd">
+<Classificacions>
+    <Classificacio>
+        <IdNadador>12345678A</IdNadador>
+        <IdProva>AA1234</IdProva>
+        <Posicion>1</Posicion>
+        <Temps>01:00:00.00</Temps>
+    </Classificacio>
+    <Classificacio>
+        <IdNadador>12345678B</IdNadador>
+        <IdProva>AB1234</IdProva>
+        <Posicion>1</Posicion>
+        <Temps>01:00:00.00</Temps>
+    </Classificacio>
+</Classificacions>

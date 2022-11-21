@@ -1,0 +1,5 @@
+<!ELEMENT Descripcion (#PCDATA|Nombre|Precio|Marca|Ano)*>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Precio (#PCDATA)>
+    <!ELEMENT Marca (#PCDATA)>
+    <!ELEMENT Ano (#PCDATA)>

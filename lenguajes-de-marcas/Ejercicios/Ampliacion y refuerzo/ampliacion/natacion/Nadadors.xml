@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<?xml-model href="Nadadors.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<Nadadors>
+    <Nadador id="12345678A">
+        <Nom>Jose Luis Pajares</Nom>
+        <Pais>Alemania</Pais>
+        <Edad>18</Edad>
+        <Genero>Hombre</Genero>
+    </Nadador>
+    <Nadador id="12345678B">
+        <Nom>Jose Luis Pajas</Nom>
+        <Pais>Alemania</Pais>
+        <Edad>18</Edad>
+        <Genero>Hombre</Genero>
+    </Nadador>
+</Nadadors>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<ClubDeportivo  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="ClubDeportivo.xsd">
+    <Datos id="DC064"/>
+    <Seccion nombre="JuntaDirectiva" id="JD047"/>
+    <Seccion nombre="CuerpoTecnico" id="CT930"/>
+    <Seccion nombre="Plantilla" id="PT033"/>
+</ClubDeportivo>

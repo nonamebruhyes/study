@@ -1,0 +1,8 @@
+<!ELEMENT Cliente (Nombre, Direccion, CodigoPostal, Telefono, Vendedor?, TipoPersona)>
+    <!ATTLIST Cliente activo CDATA "true">
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Direccion (#PCDATA)>
+    <!ELEMENT CodigoPostal (#PCDATA)>
+    <!ELEMENT Telefono (#PCDATA)>
+    <!ELEMENT Vendedor (#PCDATA)>
+    <!ELEMENT TipoPersona (#PCDATA)>

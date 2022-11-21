@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- 
+<!DOCTYPE Peticiones SYSTEM "Peticions.dtd">
+-->
+<Peticiones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Peticions.xsd">
+    <Peticion id="AA123" tipo="oferta">
+        <Usuari>AA12345678</Usuari>
+        <Assignatura>sistinform</Assignatura>
+        <Nivell>Principiant</Nivell>
+        <Descripcio>Descripcion de la peticion</Descripcio>
+        <DataInici>2002-09-24</DataInici>
+        <DataFin>2003-09-24</DataFin>
+        <Estat>Inactiu</Estat>
+    </Peticion>
+    <Peticion id="BB123" tipo="solicitud">
+        <Usuari>AA12345678</Usuari>
+        <Assignatura>lenguajesmarcas</Assignatura>
+        <Nivell>Principiant</Nivell>
+        <Descripcio>Descripcion de la solicitud</Descripcio>
+        <DataInici>2002-09-24</DataInici>
+        <DataFin>2003-09-24</DataFin>
+        <Estat>Actiu</Estat>
+    </Peticion>
+</Peticiones>

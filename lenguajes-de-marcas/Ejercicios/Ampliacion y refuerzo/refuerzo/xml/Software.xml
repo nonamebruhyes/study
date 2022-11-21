@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Software xmlns:obl="obligatoria.xml"
+            xmlns:opc="opcional.xml">
+    <obl:Aplicacion precio="">
+        <obl:Nombre></obl:Nombre>
+        <obl:Tipo></obl:Tipo>
+        <obl:Descripcion></obl:Descripcion>
+    </obl:Aplicacion>
+    <opc:Aplicacion precio="">
+        <opc:Nombre></opc:Nombre>
+        <opc:Tipo></opc:Tipo>
+        <opc:Descripcion></opc:Descripcion>
+    </opc:Aplicacion>
+</Software>

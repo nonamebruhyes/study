@@ -1,0 +1,13 @@
+<!ELEMENT Colaboracions (Colaboracio*)>
+    <!ELEMENT Colaboracio (Imparteix,Reb,Assignatura,Nivell,Hores,Estat,Avaluacio,DataInici,DataFin)>
+        <!ATTLIST Colaboracio id ID #REQUIRED>
+        <!ATTLIST Colaboracio refPeticio CDATA #REQUIRED>
+        <!ELEMENT Imparteix (#PCDATA)>
+        <!ELEMENT Reb (#PCDATA)>
+        <!ELEMENT Assignatura (#PCDATA)>
+        <!ELEMENT Nivell (#PCDATA)>
+        <!ELEMENT Hores (#PCDATA)>
+        <!ELEMENT Estat (#PCDATA)>
+        <!ELEMENT Avaluacio (#PCDATA)>
+        <!ELEMENT DataInici (#PCDATA)>
+        <!ELEMENT DataFin (#PCDATA)>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- 
+<!DOCTYPE Estudiantes SYSTEM "Estudiants.dtd">
+-->
+<Estudiantes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Estudiants.xsd">
+    <Estudiant id="12345678A">
+        <Usuari>AA12345678</Usuari>
+        <NomComplet>Jose Luis Perales Malta</NomComplet>
+        <Email>joseluisperales@gmail.com</Email>
+        <Titulacion>Bachillerato</Titulacion>
+        <Hores>2</Hores>
+        <Estat>Actiu</Estat>
+        <Comentaris>Comentarios del estudiante</Comentaris>
+    </Estudiant>
+    <Estudiant id="12345678B">
+        <Usuari>AA12345678</Usuari>
+        <NomComplet>Antonio Jose Perales Malta</NomComplet>
+        <Email>antoniojoseperales22@outlook.com</Email>
+        <Titulacion>Bachillerato</Titulacion>
+        <Hores>5</Hores>
+        <Estat>Inactiu</Estat>
+        <Comentaris>Comentarios del estudiante</Comentaris>
+    </Estudiant>
+</Estudiantes>

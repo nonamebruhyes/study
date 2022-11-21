@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<Carta  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Carta.xsd"
+        id="CA002">
+    <Categoria nombre="Tapas">
+        <Producto id="TP012"/>
+        <Producto id="ES103"/>        
+    </Categoria>
+    <Categoria nombre="Ensaladas">
+        <Producto id="PA032"/>
+        <Producto id="ES131"/>        
+    </Categoria>
+    <Categoria nombre="PastayArroces">
+        <Producto id="CR034"/>
+        <Producto id="PS521"/>        
+    </Categoria>
+    <Categoria nombre="Carnes">
+        <Producto id="DS103"/>
+        <Producto id="DS045"/>        
+    </Categoria>
+    <Categoria nombre="Pescados">
+        <Producto id="BE013"/>
+        <Producto id="VB001"/>        
+    </Categoria>
+    <Categoria nombre="Vegana">
+        <Producto id="BE013"/>
+        <Producto id="VB001"/>        
+    </Categoria>
+    <Categoria nombre="SinGluten">
+        <Producto id="BE013"/>
+        <Producto id="VB001"/>        
+    </Categoria>
+    <Categoria nombre="Postres">
+        <Producto id="BE013"/>
+        <Producto id="VB001"/>        
+    </Categoria>
+    <Categoria nombre="Bebidas">
+        <Producto id="BE013"/>
+        <Producto id="VB001"/>        
+    </Categoria>
+    <Categoria nombre="Vinos">
+        <Producto id="BE013"/>
+        <Producto id="VB001"/>        
+    </Categoria>
+</Carta>

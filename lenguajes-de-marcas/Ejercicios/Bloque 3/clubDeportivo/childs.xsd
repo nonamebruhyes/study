@@ -1,0 +1,50 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+
+    <!-- Schema for elements ChildA, ChildB and ChildC
+        The requirements are as follows:
+            * ChildA, ChildB and ChildC may occur in any order.
+            * ChildA is mandatory but may occur multiple times.
+            * ChildB is optional and may occur multiple times.
+            * ChildC is optional and may occur once only.
+    -->
+
+    <xsd:element name="root">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="ABC-container" type="ABC" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="ABC">
+        <xsd:sequence>
+            <xsd:element name="ChildB" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:choice>
+                <xsd:sequence maxOccurs="1">
+                    <xsd:element name="ChildC" type="xsd:string"/>
+                    <xsd:element name="ChildB" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+                    <xsd:element name="ChildA" type="xsd:string"/>
+                    <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+                        <xsd:element name="ChildA" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="ChildB" type="xsd:string" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:sequence>
+                <xsd:sequence maxOccurs="1">
+                    <xsd:element name="ChildA" type="xsd:string" minOccurs="1"/>
+                    <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+                        <xsd:element name="ChildA" type="xsd:string" minOccurs="0"/>
+                        <xsd:element name="ChildB" type="xsd:string" minOccurs="0"/>
+                    </xsd:sequence>
+                    <xsd:sequence minOccurs="0" maxOccurs="1">
+                        <xsd:element name="ChildC" type="xsd:string"/>
+                        <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xsd:element name="ChildA" type="xsd:string" minOccurs="0"/>
+                            <xsd:element name="ChildB" type="xsd:string" minOccurs="0"/>
+                        </xsd:sequence>
+                    </xsd:sequence>
+                </xsd:sequence>
+            </xsd:choice>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

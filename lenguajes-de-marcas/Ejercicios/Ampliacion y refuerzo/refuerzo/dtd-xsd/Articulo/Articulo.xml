@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Articulo SYSTEM "Articulo.dtd">
+<?xml-model href="Articulo.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<Articulo>
+    <Nombre></Nombre>
+    <Descripcion></Descripcion>
+    <Precio>00,00€</Precio>
+    <Stock>0</Stock>
+</Articulo>

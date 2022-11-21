@@ -1,0 +1,11 @@
+<!ELEMENT Peticiones (Peticion*)>
+    <!ELEMENT Peticion (Usuari,Assignatura,Nivell,Descripcio,DataInici,DataFin,Estat)>
+        <!ATTLIST Peticion id ID #REQUIRED>
+        <!ATTLIST Peticion tipo (oferta|solicitud) #REQUIRED>
+        <!ELEMENT Usuari (#PCDATA)>
+        <!ELEMENT Assignatura (#PCDATA)>
+        <!ELEMENT Nivell (#PCDATA)>
+        <!ELEMENT Descripcio (#PCDATA)>
+        <!ELEMENT DataInici (#PCDATA)>
+        <!ELEMENT DataFin (#PCDATA)>
+        <!ELEMENT Estat (#PCDATA)>

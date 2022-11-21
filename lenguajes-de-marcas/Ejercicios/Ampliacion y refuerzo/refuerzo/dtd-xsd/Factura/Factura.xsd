@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Empresa" type="Nombre" />
+                <xs:element name="Fecha">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="\w+ \d{4}" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Cliente" type="Nombre" />
+                <xs:element name="Vendedor" type="Nombre"/>
+                <xs:element name="Precio">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="\d{3},\d{2}[ ]?€" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Iva" type="Porcentage" default="21"/>
+                <xs:element name="Descuento" type="Porcentage" default="0"/>
+                <xs:element name="Web">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="www.\w+.\w+" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="pagado" use="optional" default="false" type="xs:boolean" />
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Nombre">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Porcentage">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="100" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

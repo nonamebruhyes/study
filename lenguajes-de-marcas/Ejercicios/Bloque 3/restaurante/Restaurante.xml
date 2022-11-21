@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Restaurante  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Restaurante.xsd"
+        hora_ini="08:00"
+        hora_fin="01:00">
+    <Carta id="CA002"/>
+    <Menu id="ME012" horario="Mediodia" precio="0.8"/>
+    <Menu id="ME003" horario="Noches" precio="1.0"/>
+    <Menu id="ME013" horario="FinDeSemana" precio="1.1"/>
+</Restaurante>

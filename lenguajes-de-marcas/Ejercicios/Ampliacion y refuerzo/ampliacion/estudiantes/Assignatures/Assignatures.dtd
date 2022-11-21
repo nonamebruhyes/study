@@ -1,0 +1,6 @@
+<!ELEMENT Assignatures (Assignatura*)>
+    <!ELEMENT Assignatura (Nom,Nivell,Descripcio,Estat)>
+        <!ELEMENT Nom (#PCDATA)>
+        <!ELEMENT Nivell (#PCDATA)>
+        <!ELEMENT Descripcio (#PCDATA)>
+        <!ELEMENT Estat (#PCDATA)>

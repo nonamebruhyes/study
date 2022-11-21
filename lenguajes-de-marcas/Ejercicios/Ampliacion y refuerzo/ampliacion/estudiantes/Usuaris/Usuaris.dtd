@@ -1,0 +1,6 @@
+<!ELEMENT Usuaris (Usuari*)>
+    <!ELEMENT Usuari (Password,LastLogin)>
+        <!ATTLIST Usuari id ID #REQUIRED>
+        <!ATTLIST Usuari tipus (promotor|estudiant) #REQUIRED>
+        <!ELEMENT Password (#PCDATA)>
+        <!ELEMENT LastLogin (#PCDATA)>

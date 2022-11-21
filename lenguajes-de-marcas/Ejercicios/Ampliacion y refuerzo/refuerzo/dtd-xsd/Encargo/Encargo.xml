@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Encargo SYSTEM "Encargo.dtd">
+<?xml-model href="Encargo.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<Encargo>
+    <Cliente>Juan Daniel Forner</Cliente>
+    <Vendedor>Carlos Rubert Escuder</Vendedor>
+    <Estado>Pa tirar</Estado>
+    <Precio>100,00€</Precio>
+    <Articulo>Ordenador Portatil Slimbook</Articulo>
+</Encargo>

@@ -1,0 +1,6 @@
+<!ELEMENT Classificacions (Classificacio*)>
+<!ELEMENT Classificacio (IdNadador,IdProva,Posicion,Temps)>
+<!ELEMENT IdNadador (#PCDATA)>
+<!ELEMENT IdProva (#PCDATA)>
+<!ELEMENT Posicion (#PCDATA)>
+<!ELEMENT Temps (#PCDATA)>

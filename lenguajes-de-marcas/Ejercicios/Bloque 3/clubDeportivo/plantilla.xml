@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<Plantilla  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="Plantilla.xsd"
+            id="PT293">
+    <Persona id="XWO201" posicion="Ala"/>
+    <Persona id="QIX002" posicion="Pivot"/>
+    <Persona id="GGT021" posicion="Base"/>
+</Plantilla>

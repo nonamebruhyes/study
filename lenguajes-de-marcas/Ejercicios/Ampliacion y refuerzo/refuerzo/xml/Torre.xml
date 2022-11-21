@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Torre>
+    <DiscoDuro></DiscoDuro>
+    <Procesador></Procesador>
+    <Ram></Ram>
+    <Ventilador></Ventilador>
+    <PlacaBase></PlacaBase>
+    <TarjetaGrafica></TarjetaGrafica>
+</Torre>

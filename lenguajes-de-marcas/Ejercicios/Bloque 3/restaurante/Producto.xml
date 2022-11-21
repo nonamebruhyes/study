@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Producto   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="Producto.xsd"
+            id="TP001">
+    <Nombre>Nombre del producto</Nombre>            
+    <Descripcion>Descripcion del producto</Descripcion>
+    <Alergenos>Alérgeno 1, alérgeno 2, alérgeno 3</Alergenos>
+    <Precio>12,56 €</Precio>    
+</Producto>

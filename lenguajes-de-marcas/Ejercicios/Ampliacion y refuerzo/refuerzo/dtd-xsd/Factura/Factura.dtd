@@ -1,0 +1,14 @@
+<!ELEMENT Factura (Empresa, Fecha, Cliente, Vendedor, Precio, Iva, Descuento, Web)>
+    <!ATTLIST Factura pagado CDATA "false">
+    <!ATTLIST Factura formatoDePago CDATA #IMPLIED>
+    <!ELEMENT Empresa (#PCDATA)>
+    <!ELEMENT Fecha (#PCDATA)>
+    <!ELEMENT Cliente (#PCDATA)>
+    <!ELEMENT Vendedor (#PCDATA)>
+    <!ELEMENT Precio (#PCDATA)>
+    <!ELEMENT Iva (#PCDATA)>
+    <!ELEMENT Descuento (#PCDATA)>
+    <!ELEMENT Web (#PCDATA)>
+<!ENTITY Empresa  "Tienda Virtual">
+<!ENTITY WEB  "www.tiendavirtual.com">
+<!ENTITY Fecha  "Octubre 2022">

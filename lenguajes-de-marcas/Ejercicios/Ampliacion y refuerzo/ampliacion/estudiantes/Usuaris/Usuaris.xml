@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- 
+<!DOCTYPE Usuaris SYSTEM "Usuaris.dtd">
+-->
+<Usuaris xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Usuaris.xsd">
+    <Usuari id="AA12345678" tipus="estudiant">
+        <Password>joseluisples20</Password>
+        <LastLogin>2002-09-30T09:00:00</LastLogin>
+    </Usuari>
+    <Usuari id="BB12345678" tipus="promotor">
+        <Password>antonijoseles22</Password>
+        <LastLogin>2002-05-30T09:00:00</LastLogin>
+    </Usuari>
+</Usuaris>

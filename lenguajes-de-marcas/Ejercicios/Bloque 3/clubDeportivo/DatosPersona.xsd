@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="DatosPersona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Nombre" type="xs:string" />
+                <xs:element name="Apellidos" type="xs:string" />
+                <xs:element name="DNI_NIE">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="\d{8}[A-Z]|[XYZ]\d{7}[A-Z]" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Telefono">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:totalDigits value="9" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Mail">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="\w+@[a-z]+.[a-z]+" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Edad" type="xs:integer" />
+                <xs:element name="FechaNacimiento">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="([0-2]\d|3[01])/(0[1-9]|1[0-2])/\d{4}" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Nacionalidad">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Afgana" />
+                            <xs:enumeration value="Albanesa" />
+                            <xs:enumeration value="Alemana" />
+                            <xs:enumeration value="Andorrana" />
+                            <xs:enumeration value="Angoleña" />
+                            <xs:enumeration value="Antiguana" />
+                            <xs:enumeration value="Saudí" />
+                            <xs:enumeration value="Argelina" />
+                            <xs:enumeration value="Argentina" />
+                            <xs:enumeration value="Armenia" />
+                            <xs:enumeration value="Arubeña" />
+                            <xs:enumeration value="Australiana" />
+                            <xs:enumeration value="Austriaca" />
+                            <xs:enumeration value="Azerbaiyana" />
+                            <xs:enumeration value="Bahameña" />
+                            <xs:enumeration value="Bangladesí" />
+                            <xs:enumeration value="Barbadense" />
+                            <xs:enumeration value="Bareiní" />
+                            <xs:enumeration value="Belga" />
+                            <xs:enumeration value="Beliceña" />
+                            <xs:enumeration value="Beninésa" />
+                            <xs:enumeration value="Bielorrusa" />
+                            <xs:enumeration value="Birmana" />
+                            <xs:enumeration value="Boliviana" />
+                            <xs:enumeration value="Bosnia" />
+                            <xs:enumeration value="Botsuana" />
+                            <xs:enumeration value="Brasileña" />
+                            <xs:enumeration value="Bruneana" />
+                            <xs:enumeration value="Búlgara" />
+                            <xs:enumeration value="Burkinés" />
+                            <xs:enumeration value="Burundésa" />
+                            <xs:enumeration value="Butanésa" />
+                            <xs:enumeration value="Caboverdiana" />
+                            <xs:enumeration value="Camboyana" />
+                            <xs:enumeration value="Camerunesa" />
+                            <xs:enumeration value="Canadiense" />
+                            <xs:enumeration value="Catarí" />
+                            <xs:enumeration value="Chadiana" />
+                            <xs:enumeration value="Chilena" />
+                            <xs:enumeration value="China" />
+                            <xs:enumeration value="Chipriota" />
+                            <xs:enumeration value="Vaticana" />
+                            <xs:enumeration value="Colombiana" />
+                            <xs:enumeration value="Comorense" />
+                            <xs:enumeration value="Norcoreana" />
+                            <xs:enumeration value="Surcoreana" />
+                            <xs:enumeration value="Marfileña" />
+                            <xs:enumeration value="Costarricense" />
+                            <xs:enumeration value="Croata" />
+                            <xs:enumeration value="Cubana" />
+                            <xs:enumeration value="Danésa" />
+                            <xs:enumeration value="Dominiqués" />
+                            <xs:enumeration value="Ecuatoriana" />
+                            <xs:enumeration value="Egipcia" />
+                            <xs:enumeration value="Salvadoreña" />
+                            <xs:enumeration value="Emiratí" />
+                            <xs:enumeration value="Eritrea" />
+                            <xs:enumeration value="Eslovaca" />
+                            <xs:enumeration value="Eslovena" />
+                            <xs:enumeration value="Española" />
+                            <xs:enumeration value="Estadounidense" />
+                            <xs:enumeration value="Estonia" />
+                            <xs:enumeration value="Etíope" />
+                            <xs:enumeration value="Filipina" />
+                            <xs:enumeration value="Finlandésa" />
+                            <xs:enumeration value="Fiyiana" />
+                            <xs:enumeration value="Francésa" />
+                            <xs:enumeration value="Gabonésa" />
+                            <xs:enumeration value="Gambiana" />
+                            <xs:enumeration value="Georgiana" />
+                            <xs:enumeration value="Gibraltareña" />
+                            <xs:enumeration value="Ghanésa" />
+                            <xs:enumeration value="Granadina" />
+                            <xs:enumeration value="Griega" />
+                            <xs:enumeration value="Groenlandésa" />
+                            <xs:enumeration value="Guatemalteca" />
+                            <xs:enumeration value="Ecuatoguineana" />
+                            <xs:enumeration value="Guineana" />
+                            <xs:enumeration value="Guineana" />
+                            <xs:enumeration value="Guyanesa" />
+                            <xs:enumeration value="Haitiana" />
+                            <xs:enumeration value="Hondureña" />
+                            <xs:enumeration value="Húngara" />
+                            <xs:enumeration value="Hindú" />
+                            <xs:enumeration value="Indonesia" />
+                            <xs:enumeration value="Iraquí" />
+                            <xs:enumeration value="Iraní" />
+                            <xs:enumeration value="Irlandésa" />
+                            <xs:enumeration value="Islandésa" />
+                            <xs:enumeration value="Cookiana" />
+                            <xs:enumeration value="Marshalésa" />
+                            <xs:enumeration value="Salomonense" />
+                            <xs:enumeration value="Israelí" />
+                            <xs:enumeration value="Italiana" />
+                            <xs:enumeration value="Jamaiquina" />
+                            <xs:enumeration value="Japonésa" />
+                            <xs:enumeration value="Jordana" />
+                            <xs:enumeration value="Kazaja" />
+                            <xs:enumeration value="Keniata" />
+                            <xs:enumeration value="Kirguisa" />
+                            <xs:enumeration value="Kiribatiana" />
+                            <xs:enumeration value="Kuwaití" />
+                            <xs:enumeration value="Laosiana" />
+                            <xs:enumeration value="Lesotense" />
+                            <xs:enumeration value="Letóna" />
+                            <xs:enumeration value="Libanésa" />
+                            <xs:enumeration value="Liberiana" />
+                            <xs:enumeration value="Libia" />
+                            <xs:enumeration value="Liechtensteiniana" />
+                            <xs:enumeration value="Lituana" />
+                            <xs:enumeration value="Luxemburguésa" />
+                            <xs:enumeration value="Malgache" />
+                            <xs:enumeration value="Malasia" />
+                            <xs:enumeration value="Malauí" />
+                            <xs:enumeration value="Maldiva" />
+                            <xs:enumeration value="Maliense" />
+                            <xs:enumeration value="Maltésa" />
+                            <xs:enumeration value="Marroquí" />
+                            <xs:enumeration value="Martiniqués" />
+                            <xs:enumeration value="Mauriciana" />
+                            <xs:enumeration value="Mauritana" />
+                            <xs:enumeration value="Mexicana" />
+                            <xs:enumeration value="Micronesia" />
+                            <xs:enumeration value="Moldava" />
+                            <xs:enumeration value="Monegasca" />
+                            <xs:enumeration value="Mongola" />
+                            <xs:enumeration value="Montenegrina" />
+                            <xs:enumeration value="Mozambiqueña" />
+                            <xs:enumeration value="Namibia" />
+                            <xs:enumeration value="Nauruana" />
+                            <xs:enumeration value="Nepalí" />
+                            <xs:enumeration value="Nicaragüense" />
+                            <xs:enumeration value="Nigerina" />
+                            <xs:enumeration value="Nigeriana" />
+                            <xs:enumeration value="Noruega" />
+                            <xs:enumeration value="Neozelandésa" />
+                            <xs:enumeration value="Omaní" />
+                            <xs:enumeration value="Neerlandésa" />
+                            <xs:enumeration value="Pakistaní" />
+                            <xs:enumeration value="Palauana" />
+                            <xs:enumeration value="Palestina" />
+                            <xs:enumeration value="Panameña" />
+                            <xs:enumeration value="Papú" />
+                            <xs:enumeration value="Paraguaya" />
+                            <xs:enumeration value="Peruana" />
+                            <xs:enumeration value="Polaca" />
+                            <xs:enumeration value="Portuguésa" />
+                            <xs:enumeration value="Puertorriqueña" />
+                            <xs:enumeration value="Británica" />
+                            <xs:enumeration value="Centroafricana" />
+                            <xs:enumeration value="Checa" />
+                            <xs:enumeration value="Macedonia" />
+                            <xs:enumeration value="Congoleña" />
+                            <xs:enumeration value="Congoleña" />
+                            <xs:enumeration value="Dominicana" />
+                            <xs:enumeration value="Sudafricana" />
+                            <xs:enumeration value="Ruandésa" />
+                            <xs:enumeration value="Rumana" />
+                            <xs:enumeration value="Rusa" />
+                            <xs:enumeration value="Samoana" />
+                            <xs:enumeration value="Cristobaleña" />
+                            <xs:enumeration value="Sanmarinense" />
+                            <xs:enumeration value="Sanvicentina" />
+                            <xs:enumeration value="Santalucense" />
+                            <xs:enumeration value="Santotomense" />
+                            <xs:enumeration value="Senegalésa" />
+                            <xs:enumeration value="Serbia" />
+                            <xs:enumeration value="Seychellense" />
+                            <xs:enumeration value="Sierraleonésa" />
+                            <xs:enumeration value="Singapurense" />
+                            <xs:enumeration value="Siria" />
+                            <xs:enumeration value="Somalí" />
+                            <xs:enumeration value="Ceilanésa" />
+                            <xs:enumeration value="Suazi" />
+                            <xs:enumeration value="Sursudanésa" />
+                            <xs:enumeration value="Sudanésa" />
+                            <xs:enumeration value="Sueca" />
+                            <xs:enumeration value="Suiza" />
+                            <xs:enumeration value="Surinamesa" />
+                            <xs:enumeration value="Tailandésa" />
+                            <xs:enumeration value="Tanzana" />
+                            <xs:enumeration value="Tayika" />
+                            <xs:enumeration value="Timorense" />
+                            <xs:enumeration value="Togolésa" />
+                            <xs:enumeration value="Tongana" />
+                            <xs:enumeration value="Trinitense" />
+                            <xs:enumeration value="Tunecina" />
+                            <xs:enumeration value="Turcomana" />
+                            <xs:enumeration value="Turca" />
+                            <xs:enumeration value="Tuvaluana" />
+                            <xs:enumeration value="Ucraniana" />
+                            <xs:enumeration value="Ugandésa" />
+                            <xs:enumeration value="Uruguaya" />
+                            <xs:enumeration value="Uzbeka" />
+                            <xs:enumeration value="Vanuatuense" />
+                            <xs:enumeration value="Venezolana" />
+                            <xs:enumeration value="Vietnamita" />
+                            <xs:enumeration value="Yemení" />
+                            <xs:enumeration value="Yibutiana" />
+                            <xs:enumeration value="Zambiana" />
+                            <xs:enumeration value="Zimbabuense" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z]{3}\d{3}" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

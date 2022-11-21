@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- 
+<!DOCTYPE Assignatures SYSTEM "Assignatures.dtd">
+-->
+<Assignatures xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Assignatures.xsd">
+    <Assignatura>
+        <Nom>sistinform</Nom>
+        <Nivell>Principiant</Nivell>
+        <Descripcio>Descripcion de la asignatura</Descripcio>
+        <Estat>Inactiu</Estat>
+    </Assignatura>
+    <Assignatura>
+        <Nom>lenguajesmarcas</Nom>
+        <Nivell>Principiant</Nivell>
+        <Descripcio>Descripcion de la asignatura</Descripcio>
+        <Estat>Actiu</Estat>
+    </Assignatura>
+</Assignatures>

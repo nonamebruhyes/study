@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Descripcion">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element name="Nombre" type="Nombre" />
+                <xs:element name="Precio">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="\d{3},\d{2}[ ]?€" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Marca" type="Nombre" />
+                <xs:element name="Ano">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:maxInclusive value="2022" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Nombre">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

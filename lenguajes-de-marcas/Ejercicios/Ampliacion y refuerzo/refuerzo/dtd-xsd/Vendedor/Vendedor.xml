@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Vendedor SYSTEM "Vendedor.dtd">
+<?xml-model href="Vendedor.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<Vendedor>
+    <Nombre></Nombre>
+    <Telefono>111111111</Telefono>
+    <Zona>Sagunto</Zona>
+</Vendedor>

@@ -1,0 +1,91 @@
+<!ELEMENT carta (tap:tapas, ens:ensaladas, pya:pastaYArroces, car:carnes, pes:pescados, veg:vegana, sgl:sinGluten, pos:postres, beb:bebidas, vin:vinos)>
+    <!ATTLIST carta xmlns:tap CDATA "tapas.xml">
+    <!ATTLIST carta xmlns:ens CDATA "ensaladas.xml">
+    <!ATTLIST carta xmlns:pya CDATA "pastasYArroces.xml">
+    <!ATTLIST carta xmlns:car CDATA "carnes.xml">
+    <!ATTLIST carta xmlns:pes CDATA "pescados.xml">
+    <!ATTLIST carta xmlns:veg CDATA "vegana.xml">
+    <!ATTLIST carta xmlns:sgl CDATA "sinGluten.xml">
+    <!ATTLIST carta xmlns:pos CDATA "postres.xml">
+    <!ATTLIST carta xmlns:beb CDATA "bebidas.xml">
+    <!ATTLIST carta xmlns:vin CDATA "vinos.xml">
+
+    <!ELEMENT tap:tapas (tap:producto*)>
+        <!ELEMENT tap:producto (tap:id, tap:nombre, tap:descripcion, tap:alergenos, tap:precio)*>
+            <!ELEMENT tap:id (#PCDATA)>
+            <!ELEMENT tap:nombre (#PCDATA)>
+            <!ELEMENT tap:descripcion (#PCDATA)>
+            <!ELEMENT tap:alergenos (#PCDATA)>
+            <!ELEMENT tap:precio (#PCDATA)>
+
+    <!ELEMENT ens:ensaladas (ens:producto*)>
+        <!ELEMENT ens:producto (ens:id, ens:nombre, ens:descripcion, ens:alergenos, ens:precio)*>
+            <!ELEMENT ens:id (#PCDATA)>
+            <!ELEMENT ens:nombre (#PCDATA)>
+            <!ELEMENT ens:descripcion (#PCDATA)>
+            <!ELEMENT ens:alergenos (#PCDATA)>
+            <!ELEMENT ens:precio (#PCDATA)>
+
+    <!ELEMENT pya:pastaYArroces (pya:producto*)>
+        <!ELEMENT pya:producto (pya:id, pya:nombre, pya:descripcion, pya:alergenos, pya:precio)*>
+            <!ELEMENT pya:id (#PCDATA)>
+            <!ELEMENT pya:nombre (#PCDATA)>
+            <!ELEMENT pya:descripcion (#PCDATA)>
+            <!ELEMENT pya:alergenos (#PCDATA)>
+            <!ELEMENT pya:precio (#PCDATA)>
+
+    <!ELEMENT car:carnes (car:producto*)>
+        <!ELEMENT car:producto (car:id, car:nombre, car:descripcion, car:alergenos, car:precio)*>
+            <!ELEMENT car:id (#PCDATA)>
+            <!ELEMENT car:nombre (#PCDATA)>
+            <!ELEMENT car:descripcion (#PCDATA)>
+            <!ELEMENT car:alergenos (#PCDATA)>
+            <!ELEMENT car:precio (#PCDATA)>
+
+    <!ELEMENT pes:pescados (pes:producto*)>
+        <!ELEMENT pes:producto (pes:id, pes:nombre, pes:descripcion, pes:alergenos, pes:precio)*>
+            <!ELEMENT pes:id (#PCDATA)>
+            <!ELEMENT pes:nombre (#PCDATA)>
+            <!ELEMENT pes:descripcion (#PCDATA)>
+            <!ELEMENT pes:alergenos (#PCDATA)>
+            <!ELEMENT pes:precio (#PCDATA)>
+
+    <!ELEMENT veg:vegana (veg:producto*)>
+        <!ELEMENT veg:producto (veg:id, veg:nombre, veg:descripcion, veg:alergenos, veg:precio)*>
+            <!ELEMENT veg:id (#PCDATA)>
+            <!ELEMENT veg:nombre (#PCDATA)>
+            <!ELEMENT veg:descripcion (#PCDATA)>
+            <!ELEMENT veg:alergenos (#PCDATA)>
+            <!ELEMENT veg:precio (#PCDATA)>
+
+    <!ELEMENT sgl:sinGluten (sgl:producto*)>
+        <!ELEMENT sgl:producto (sgl:id, sgl:nombre, sgl:descripcion, sgl:alergenos, sgl:precio)*>
+            <!ELEMENT sgl:id (#PCDATA)>
+            <!ELEMENT sgl:nombre (#PCDATA)>
+            <!ELEMENT sgl:descripcion (#PCDATA)>
+            <!ELEMENT sgl:alergenos (#PCDATA)>
+            <!ELEMENT sgl:precio (#PCDATA)>
+
+    <!ELEMENT pos:postres (pos:producto*)>
+        <!ELEMENT pos:producto (pos:id, pos:nombre, pos:descripcion, pos:alergenos, pos:precio)*>
+            <!ELEMENT pos:id (#PCDATA)>
+            <!ELEMENT pos:nombre (#PCDATA)>
+            <!ELEMENT pos:descripcion (#PCDATA)>
+            <!ELEMENT pos:alergenos (#PCDATA)>
+            <!ELEMENT pos:precio (#PCDATA)>
+
+    <!ELEMENT beb:bebidas (beb:producto*)>
+        <!ELEMENT beb:producto (beb:id, beb:nombre, beb:descripcion, beb:alergenos, beb:precio)*>
+            <!ELEMENT beb:id (#PCDATA)>
+            <!ELEMENT beb:nombre (#PCDATA)>
+            <!ELEMENT beb:descripcion (#PCDATA)>
+            <!ELEMENT beb:alergenos (#PCDATA)>
+            <!ELEMENT beb:precio (#PCDATA)>
+
+    <!ELEMENT vin:vinos (vin:producto*)>
+        <!ELEMENT vin:producto (vin:id, vin:nombre, vin:descripcion, vin:alergenos, vin:precio)*>
+            <!ELEMENT vin:id (#PCDATA)>
+            <!ELEMENT vin:nombre (#PCDATA)>
+            <!ELEMENT vin:descripcion (#PCDATA)>
+            <!ELEMENT vin:alergenos (#PCDATA)>
+            <!ELEMENT vin:precio (#PCDATA)>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<DatosPersona   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="DatosPersona.xsd"
+                id="NAP012">
+    <Nombre>Nombre Persona</Nombre>
+    <Apellidos>Apellidos Persona</Apellidos>
+    <DNI_NIE>X1234567A</DNI_NIE>
+    <Telefono>987654321</Telefono>
+    <Mail>direccion@dominio.com</Mail>
+    <Edad>37</Edad>
+    <FechaNacimiento>31/01/1987</FechaNacimiento>
+    <Nacionalidad>Española</Nacionalidad>
+</DatosPersona>
