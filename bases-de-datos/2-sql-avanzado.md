@@ -197,3 +197,16 @@ Por ejemplo, quiero saber los 10 empleados que mas cobran:
 Una tabla puede estar relacionada con si misma como se ve en el dibujo siguiente:
 
 <image src="https://raw.githubusercontent.com/juvndvv/study/main/bases-de-datos/0-hr-relaciones.jpg" alt="Descripción de la imagen" height="250">
+
+En este caso la tabla de empleados esta relacionada consigo misma. Esa relacion de empleados significa que quien es el jefe de cada trabajador, otro trabajador. Este se encuentra en *manager_id*, que dice el *employee_id* del jefe.
+
+Por ejemplo, queremos saber el nombre de un empleado y el nombre de su jefe:
+
+    SELECT
+        E.LAST_NAME AS TRABAJADOR,
+        J.LAST_NAME AS JEFE
+    FROM
+        EMPLOYEES E,
+        JOIN
+        EMPLOYEES J
+        ON(E.MANAGER_ID=J.EMPLOYEE_ID);
