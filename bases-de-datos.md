@@ -1,6 +1,9 @@
 # SQL BASICO
 
-## SELECT campos FROM tabla; 
+1. SELECT(#id1)
+2. WHERE(#id2)
+
+## SELECT campos FROM tabla; <a name="id1" />
 
     DISTINCT    ->      SELECT DISTINCT campo FROM tabla;   Saca los diferentes valores de un campo
     AS          ->      SELECT campo AS apodo FROM tabla;   Le pone un apodo a un campo
