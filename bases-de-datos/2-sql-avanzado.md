@@ -195,4 +195,5 @@ Por ejemplo, quiero saber los 10 empleados que mas cobran:
 
 ### Consultas jerarquicas
 Una tabla puede estar relacionada con si misma como se ve en el dibujo siguiente:
-<image src="https://raw.githubusercontent.com/juvndvv/study/main/bases-de-datos/0-hr-relaciones.jpg" alt="Descripción de la imagen" height="150">
+
+<image src="https://raw.githubusercontent.com/juvndvv/study/main/bases-de-datos/0-hr-relaciones.jpg" alt="Descripción de la imagen" height="250">
