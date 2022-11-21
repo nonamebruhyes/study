@@ -210,3 +210,9 @@ Por ejemplo, queremos saber el nombre de un empleado y el nombre de su jefe:
         JOIN
         EMPLOYEES J
         ON(E.MANAGER_ID=J.EMPLOYEE_ID);
+
+| EMPID | LAST_NAME | MANID
+|--|--|--|
+1 | Forner | 
+2 | Jorge | 1
+3 | Carla | 1
