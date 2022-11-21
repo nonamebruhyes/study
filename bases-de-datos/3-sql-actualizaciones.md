@@ -27,6 +27,9 @@ Para crear una secuencia:
 - ***CYCLE***: hace que la secuencia vuelva a empezar si ha llegado al valor maximo.
 - ***CACHE***: indica cuantos valores de la secuencia Oracle dejara prealojados en memoria, por defecto 20. Si se elige ***NOCACHE*** no se guarda ninguno en memoria.
 
+### Uso de una secuencia
+Tenemos ***NEXTVAL***, que nos dara el siguiente valor de la secuencia y actualizara al siguiente; y ***CURRVAL***, que nos devuelve el valor actual, es decir, el ultimo que seha gastado. 
+
 ## Estado de los datos durante la transaccion
 El manejo de las transacciones es una de las cuestiones mas complejas para un *SGBD*. Los mas poderosos son capaces de gestionar las transacciones en cumplimiento de la norma que asegura estos cuatro aspectos (*ACID*):
 1. **Atomicidad**: que ninguna instruccion se quede a medio hacer
