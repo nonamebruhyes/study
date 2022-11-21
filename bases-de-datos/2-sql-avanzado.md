@@ -241,6 +241,8 @@ Sea tabla *MUNICIPIOS*:
 |2|3|3|12
 |2|4|4|19
 
+Realizamos la siguiente SELECT:
+
     SELECT
         CODAUT, CODPRO, SUM(NHAB)
     FROM
@@ -248,3 +250,7 @@ Sea tabla *MUNICIPIOS*:
     GROUP BY
         ROLLUP (CODAUT, CODPRO)
     ORDER BY CODAUT, CODPRO;
+
+***ROLLUP*** lo que hara sera sacar los habitantes por cada par de valores autonomia y provincia, habitantes por autonomia y el global.
+
+***CUBE*** sacaria tambien totales por el segundo agrupamiento.
