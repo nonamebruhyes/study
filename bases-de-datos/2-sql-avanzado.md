@@ -253,4 +253,42 @@ Realizamos la siguiente SELECT:
 
 ***ROLLUP*** lo que hara sera sacar los habitantes por cada par de valores autonomia y provincia, habitantes por autonomia y el global.
 
+[
+  {
+    "CODAUT": "1",
+    "CODPRO": "1",
+    "SUM(NUMHAB)": "12"
+  },
+  {
+    "CODAUT": "1",
+    "CODPRO": "2",
+    "SUM(NUMHAB)": "14"
+  },
+  {
+    "CODAUT": "1",
+    "CODPRO": "",
+    "SUM(NUMHAB)": "26"
+  },
+  {
+    "CODAUT": "2",
+    "CODPRO": "3",
+    "SUM(NUMHAB)": "12"
+  },
+  {
+    "CODAUT": "2",
+    "CODPRO": "4",
+    "SUM(NUMHAB)": "19"
+  },
+  {
+    "CODAUT": "2",
+    "CODPRO": "",
+    "SUM(NUMHAB)": "31"
+  },
+  {
+    "CODAUT": "",
+    "CODPRO": "",
+    "SUM(NUMHAB)": "57"
+  }
+]
+
 ***CUBE*** sacaria tambien totales por el segundo agrupamiento.
