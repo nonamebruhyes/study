@@ -42,4 +42,13 @@ Como vemos lo anterior no tiene mucho sentido y solo nos interesaria quedarnos c
 
     SELECT * FROM EMPLEADOS E, DEPARTAMENTOS D WHERE E.CODDEP = D.CODDEP;
 
+Con la sentencia anterior la tabla resultante nos quedaria de la siguiente manera:
+
+| NEMP | NOM | CODDEP | CODDEP | DESCRIPCIO |
+| -- | -- | -- | -- | -- |
+| 1001 | Juan | 10 | 10 | Compres |
+| 1002 | Pedro | 20 | 20 | Vendes |
+| 1003 | Mitja | 20 | 20 | Vendes |
+
 ## JOIN <a name="id2" />
+
