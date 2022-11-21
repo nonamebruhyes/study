@@ -170,6 +170,8 @@ Estas consultas utilizan al menos dos SELECT resultados de los cuales se pueden 
 3. ***MINUS***: muestra lo de la consulta de la izquierda menos lo que coincida con la consulta de la derecha
 
 ## Consultas avanzadas <a name="id7" />
+
+### ROWNUM
 Todas las tablas tienen unas columnas virtuales de uso interno de Oracle que normalmente no vemos, son ***ROWID*** y ***ROWNUM***. *ROWID* es un identificador interno unico para cada registro y *ROWNUM* es el numero de orden de cada fila dentro de la tabla. Normalmente el orden en el que se introdujeron.
 
 Cuando se realiza una subconsulta se crea una **tabla temporal** con el resultado de la SELECT por lo que se vuelve a recalcular el *ROWNUM*. Eso nos permite hacer consultas tipo: *"dime los 10 mejores..."*.
@@ -190,3 +192,5 @@ Por ejemplo, quiero saber los 10 empleados que mas cobran:
         )
     WHERE
         ROWNUM <= 10;
+
+### Consultas jerarquicas
