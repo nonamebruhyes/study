@@ -60,4 +60,9 @@ En el caso contrario:
     ... FROM EMPLEADOS E JOIN DEPARTMENTS D ON(E.CODDEP=D.CD)...;
 
 ### Modificaciones de JOIN
-Hay veces en la que una de las tablas puede tener el campo que las relaciona con valor nul o incluso que no coincida ninguno de la otra tabla con ese campo. Para eso tenemos las sentencias: ***OUTER JOIN***, ***LEFT JOIN***, ***RIGHT JOIN***.
+Hay veces en la que una de las tablas puede tener el campo que las relaciona con valor nul o incluso que no coincida ninguno de la otra tabla con ese campo. Para eso tenemos las sentencias: LEFT JOIN, RIGHT JOIN, OUTER JOIN. 
+
+1. ***LEFT JOIN***: esta sentencia saca los registros con valores null de la tabla de la izquierda.
+2. ***RIGHT JOIN***: esta sentencia saca los registros de la tabla de la derecha aunque no tengan ninguna relacion con la tabla de la izquierda.
+3. ***OUTER JOIN***: esta sentencia junta las dos anteriores
+4. ***INNER JOIN***: por defecto
