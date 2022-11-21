@@ -138,6 +138,25 @@ Evidentemente la SUBSELECT anterior solo devuelve un resultado pero si devolvier
 3. ***IN***: no usa comparador, ya que sirve para comprobar si un valor se encuentra en el resultado de la subconsulta
 4. ***NOT IN***: Comprueba si un valor no se encuentra en la subconsulta
 
+Existe otro operador llamado ***EXIST*** que devuelve verdadero si la consulta que le sigue devuelve algun valor. Se utiliza normalmente utilizando consultas correlacionadas.
+
+Por ejemplo, quiero saber los lugares de trabajo en los cuales algun trabajador esta cobrando el salario minimo:
+
+    SELECT
+        JOB_TITLE
+    FROM
+        JOBS J
+    WHERE
+        EXIST (
+            SELECT
+                *
+            FROM
+                EMPLOYEES E
+            WHERE
+                E.SALARY=J.MIN_SALARY
+        );
+
+
 ## Operadores de conjunto <a name="id6" />
 
 
