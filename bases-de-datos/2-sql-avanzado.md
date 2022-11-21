@@ -248,7 +248,7 @@ Realizamos la siguiente SELECT:
     FROM
         MUNICIPIOS
     GROUP BY
-        ROLLUP (CODAUT, CODPRO)
+        [ROLLUP/CUBE] (CODAUT, CODPRO)
     ORDER BY CODAUT, CODPRO;
 
 ***ROLLUP*** lo que hara sera sacar los habitantes por cada par de valores autonomia y provincia, habitantes por autonomia y el global.
@@ -264,3 +264,15 @@ Realizamos la siguiente SELECT:
 | | |57
 
 ***CUBE*** sacaria tambien totales por el segundo agrupamiento.
+| CODAUT | CODPRO | SUM(NUMHAB)
+|--|--|--
+|1|1|12
+|1|2|14
+|1| |26
+|2|3|12
+|2|3|19
+|2| |31
+| | |57
+| |1|12
+| |2|14
+| |3|31
