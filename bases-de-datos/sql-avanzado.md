@@ -92,3 +92,23 @@ La sintaxis completa de una sentencia SELECT quedaria:
     [GROUP BY grupos]
     [HAVING condicionesDeGrupos]
     [ORDER BY listaExpresiones]
+
+En el apartado ***GROUP BY*** se indica el nombre de las columnas por las cuales se agrupa. La funcion de este apartado es crear una unica fila para cada valor diferente en las columnas de grupo. Hay que tener en cuenta que si agrupamos ya no podemos sacar datos individuales.
+
+La clausula ***HAVING*** es como otra clausula WHERE pero que se aplica a los grupos, para sacarlos o no.
+
+Ejemplo:
+
+    SELECT
+        DEPARTMENT_ID,
+        SUM(SALARY)
+    FROM
+        EMPLOYEES
+    WHERE
+        HIRE_DATE < TO_DATE('01/01/2005', 'dd/mm/yyyy')
+    GROUP BY
+        DEPARTMENT_ID
+    HAVING
+        SUM(SALARY) > 20000
+    ORDER BY
+        1;
