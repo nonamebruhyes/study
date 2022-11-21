@@ -228,4 +228,5 @@ Por ejemplo, queremos saber el nombre de un empleado y el nombre de su jefe:
 *... ON(E.MANAGER=J.EMPLOYEE_ID)*
 
 | E.EMPID | E.LAST_NAME | E.MANID | J.EMPID | J.LAST_NAME | J.MANID
+|--|--|--|--|--|--|
 | 2 | Carla | 1 | 1 | Forner | 
