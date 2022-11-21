@@ -14,5 +14,6 @@ Dadas las tablas:
 | 1001 | Mitja | 20 |
 
 | CODDEP | DESCRIPCIO |
+| -- | -- | -- | 
 | 10 | Compres |
 | 20 | Vendes |
