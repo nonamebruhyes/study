@@ -3,7 +3,7 @@
 1. [Relaciones entre tablas](#id1)
 2. [JOIN](#id2)
 3. [Funciones de calculo con grupos](#id3)
-4. [GROUP BY (Agrupaciones)](#id4)
+4. [GROUP BY / HAVING (Agrupaciones)](#id4)
 
 ## RELACIONES ENTRE TABLAS <a name="id1" />
     SELECT campo1, campo2 FROM tabla1, tabla2 WHERE key1=key2;
@@ -80,4 +80,15 @@ Estas funciones lo que hacen son calculos en vertical en la tabla, es decir, de 
     - STDDEV(expresion)        ->      Desviacion estandard
     - VARIANCE(expresion)      ->      Varianza
 
-## GROUP BY (Agrupaciones) <a name="id4" />
+## GROUP BY / HAVING (Agrupaciones) <a name="id4" />
+Las expresiones anteriores es normal utilizarlas con grupos de filas en base a un criterio. Esta tecnica se conoce como agrupacion de filas i provoca que se muestre una sola fila de cada grupo.
+
+La sintaxis completa de una sentencia SELECT quedaria:
+
+    SELECT listaExpresiones
+    FROM listaTablas
+    [JOIN tablasRelacionadasMasCondicionesDeRelacion]
+    [WHERE condiciones]
+    [GROUP BY grupos]
+    [HAVING condicionesDeGrupos]
+    [ORDER BY listaExpresiones]
