@@ -20,6 +20,11 @@ Departamentos:
 | 10 | Compres |
 | 20 | Vendes |
 
+Cuando realizamos la siguiente sentencia:
+    SELECT * FROM EMPLEADOS, DEPARTAMENTOS
+
+Oracle hace lo que se llama el producto cartesiano de las dos tablas por lo que la tabla resultante quedaria algo asi:
+
 | NEMP | NOM | CODDEP | CODDEP | DESCRIPCIO |
 | -- | -- | -- | -- | -- |
 | 1001 | Juan | 10 | 10 | Compres |
@@ -28,3 +33,7 @@ Departamentos:
 | 1002 | Pedro | 20 | 20 | Vendes |
 | 1003 | Mitja | 20 | 10 | Compres |
 | 1003 | Mitja | 20 | 20 | Vendes |
+
+Como vemos lo anterior no tiene mucho sentido y solo nos interesaria quedarnos con los registros en los que el CODDEP sea igual. Para esto utilizamos una clausula WHERE en la que igualemos los dos campos:
+
+    SELECT * FROM EMPLEADOS, DEPARTAMENTOS WHERE EMPLEADOS.CODDEP = DEPARTAMENTOS.CODDEP;
