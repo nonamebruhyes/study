@@ -118,5 +118,5 @@ se ejecute la consulta.
     - TO_NUMBER()
     - TO_DATE()
 
-## RELACIONES ENTRE TABLAS
+## RELACIONES ENTRE TABLAS <a name="id6" />
     SELECT campo1, campo2 FROM tabla1, tabla2 WHERE key1=key2;
