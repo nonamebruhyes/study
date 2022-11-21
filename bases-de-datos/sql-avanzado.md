@@ -4,6 +4,7 @@
 2. [JOIN](#id2)
 3. [Funciones de calculo con grupos](#id3)
 4. [GROUP BY / HAVING (Agrupaciones)](#id4)
+5. [Subconsulta](#id5)
 
 ## RELACIONES ENTRE TABLAS <a name="id1" />
     SELECT campo1, campo2 FROM tabla1, tabla2 WHERE key1=key2;
@@ -112,3 +113,24 @@ Ejemplo:
         SUM(SALARY) > 20000
     ORDER BY
         1;
+
+## Subconsultas <a name="id5" />
+El uso de subconsultas es una tecnica que permita utilizar el resultado de una SELECT en otra SELECT. Permite solucionar consulta complejas mediante el uso de resultados previos a otra consulta.
+
+El SELECT que se coloca en el interior de otra SELECT se conoce con el termino de SUBSELECT y este se puede colocar dentro de las clausulas WHERE, HAVING, FROM, JOIN
+
+Por ejemplo, si queremos sacar el nombre de los empleados que cobran mas que el salario medio total de la empresa:
+    SELECT
+        FIRST_NAME,
+        LAST_NAME
+    FROM
+        EMPLOYEES
+    WHERE
+        SALARY > (SELECT AVG(SALARY) FROM EMPLOYEES);
+
+Evidentemente la SUBSELECT anterior solo devuelve un resultado pero si devolviera varios nos daria un error. No podriamos compararla directamente, tenemos que añadir estos operadores:
+
+1. ANY o SOME: compara con cualquier registro de la subconsulta. La instruccion es valida si hay un registro de la subconsulta que permite que la comparacion sea correcta.
+2. ALL: compara con todos los registros de la subconsulta. La instruccion es cierta si es cierta toda comparacion
+3. IN: no usa comparador, ya que sirve para comprobar si un valor se encuentra en el resultado de la subconsulta
+4. NOT IN: Comprueba si un valor no se encuentra en la subconsulta
