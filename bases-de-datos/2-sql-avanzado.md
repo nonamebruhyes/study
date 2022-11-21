@@ -218,9 +218,14 @@ Por ejemplo, queremos saber el nombre de un empleado y el nombre de su jefe:
 2 | Carla | 1
 
 *EMPLOYEES \* EMLOYEES*
-| EMPID | LAST_NAME | MANID | EMPID | LAST_NAME | MANID
+| E.EMPID | E.LAST_NAME | E.MANID | J.EMPID | J.LAST_NAME | J.MANID
 |--|--|--|--|--|--|
 | 1 | Forner | | 1 | Forner | 
 | 1 | Forner | | 2 | Carla | 1
 | 2 | Carla | 1 | 1 | Forner | 
 | 2 | Carla | 1 | 2 | Carla | 2
+
+*... ON(E.MANAGER=J.EMPLOYEE_ID)*
+
+| E.EMPID | E.LAST_NAME | E.MANID | J.EMPID | J.LAST_NAME | J.MANID
+| 2 | Carla | 1 | 1 | Forner | 
