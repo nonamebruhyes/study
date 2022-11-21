@@ -236,7 +236,7 @@ Por ejemplo, queremos saber el nombre de un empleado y el nombre de su jefe:
 Sea tabla *MUNICIPIOS*:
 |CODAUT|CODPRO|CODMUN|NHAB
 |--|--|--|--
-||||
-||||
-||||
-||||
+|1|1|1|12
+|1|2|2|14
+|2|3|3|12
+|2|4|4|19
