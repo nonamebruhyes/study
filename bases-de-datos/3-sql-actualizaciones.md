@@ -1,6 +1,13 @@
 # SQL ACTUALIZACIONES
 
+## INSERT
+    INSERT INTO tabla [(listaDeColumnas)]
+    VALUES (valor1 [,valor2 ...]);
 
+Esta sentencia inserta un registro en una tabla, o bien con el orden establecido en la tabla, o por el orden que nosotros pongamos en *listaDeColumnas*. Podemos no incluir algun campo en *listaDeColumnas* y este automaticamente sera *NULL*.
+
+- Se ha de tener en cuenta que algunos campos no admiten *NULL*
+- Tendra que ser del tipo especificado del campo: gastar *TO_DATE()...*
 
 ## Estado de los datos durante la transaccion
 El manejo de las transacciones es una de las cuestiones mas complejas para un *SGBD*. Los mas poderosos son capaces de gestionar las transacciones en cumplimiento de la norma que asegura estos cuatro aspectos (*ACID*):
