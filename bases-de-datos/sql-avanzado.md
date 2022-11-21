@@ -5,6 +5,8 @@
 3. [Funciones de calculo con grupos](#id3)
 4. [GROUP BY / HAVING (Agrupaciones)](#id4)
 5. [Subconsulta](#id5)
+6. [Operadores de conjunto](#id6)
+7. [Consultas avanzadas](#id7)
 
 ## RELACIONES ENTRE TABLAS <a name="id1" />
     SELECT campo1, campo2 FROM tabla1, tabla2 WHERE key1=key2;
@@ -135,3 +137,8 @@ Evidentemente la SUBSELECT anterior solo devuelve un resultado pero si devolvier
 2. ***ALL***: compara con todos los registros de la subconsulta. La instruccion es cierta si es cierta toda comparacion
 3. ***IN***: no usa comparador, ya que sirve para comprobar si un valor se encuentra en el resultado de la subconsulta
 4. ***NOT IN***: Comprueba si un valor no se encuentra en la subconsulta
+
+## Operadores de conjunto <a name="id6" />
+
+
+## Consultas avanzadas <a name="id7" />
