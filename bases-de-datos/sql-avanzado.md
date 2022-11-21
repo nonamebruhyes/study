@@ -120,6 +120,7 @@ El uso de subconsultas es una tecnica que permita utilizar el resultado de una S
 El SELECT que se coloca en el interior de otra SELECT se conoce con el termino de SUBSELECT y este se puede colocar dentro de las clausulas WHERE, HAVING, FROM, JOIN
 
 Por ejemplo, si queremos sacar el nombre de los empleados que cobran mas que el salario medio total de la empresa:
+
     SELECT
         FIRST_NAME,
         LAST_NAME
