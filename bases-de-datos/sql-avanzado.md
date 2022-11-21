@@ -8,6 +8,7 @@
 Dadas las tablas:
 
 | NEMP | NOM | CODDEP |
+| -- | -- | -- | 
 | 1001 | Juan | 10 |
 | 1001 | Pedro | 20 |
 | 1001 | Mitja | 20 |
