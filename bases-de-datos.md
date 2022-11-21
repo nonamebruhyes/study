@@ -40,7 +40,7 @@ Hace una ordenacion de la tabla segun el campo que le pongamos
 Dejamos abierto el valor, por ejemplo para una where y se pedira cuando
 se ejecute la consulta.
 
-SELECT campo FROM tabla WHERE campo = &NOMBRE_VARIABLE;
+    SELECT campo FROM tabla WHERE campo = &NOMBRE_VARIABLE;
 
 ## FUNCIONES
 ### Funciones numericas
