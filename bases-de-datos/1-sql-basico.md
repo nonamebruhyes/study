@@ -7,8 +7,6 @@
 5. [Funciones](#id5)
 6. [JOIN](#id6)
 
-<image src="https://orlandoolguin.files.wordpress.com/2013/12/oracle_hr_schema.jpg" alt="Descripción de la imagen" height="450">
-
 ## SELECT campos FROM tabla; <a name="id1" />
 
     DISTINCT    ->      SELECT DISTINCT campo FROM tabla;   Saca los diferentes valores de un campo
