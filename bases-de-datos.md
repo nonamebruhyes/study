@@ -1,7 +1,7 @@
 # SQL BASICO
 
-1. SELECT(#id1)
-2. WHERE(#id2)
+1. [SELECT](#id1)
+2. [WHERE](#id2)
 
 ## SELECT campos FROM tabla; <a name="id1" />
 
