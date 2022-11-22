@@ -131,3 +131,16 @@ Asi se declara una restriccion:
     </xs:simpleType>
 </xs:element/attribute>
 ~~~
+
+### Valores maximos y minimos
+<xs:maxExclusive value="" />
+<xs:maxInclusive value="" />
+<xs:minExclusive value="" />
+<xs:minInclusive value="" />
+
+### Lista de valores
+<xs:enumeration value="1" />
+<xs:enumeration value="2" />
+<xs:enumeration value="3" />
+
+### Patrones
