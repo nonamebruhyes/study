@@ -17,7 +17,7 @@
 ### Inlcuir XSD en XML
     <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="root.xsd">
     ...
-    </ root>
+    </root>
 
 ## XSD Elementos <a name="id1"/>
 Los ficheros XSD pueden estar formados por [elementos simples](#id2) o [elementos complejos](#id3)
