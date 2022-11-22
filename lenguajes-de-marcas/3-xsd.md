@@ -157,13 +157,13 @@ Asi se declara una restriccion:
 |\s|Espacio (tabulador, espacio ...) cualquier caracter| 
 |\S|Cualquier caracter que no sea un espacio en blanco|C
 |\d{n}|n digitos exactos|
-|\d{n,|n o mas digitos|
+|\d{n,}|n o mas digitos|
 |\d{n, m}|digitos n o m|
 |[xyz]|eleccion x, y o z|
 |[A-Z]|uno de los caracteres de A a Z|
 |[^abc]|Revocacion de un conjunto de caracteresa|
-|||
-|||
-|||
-|||
-|||
+|[A-Z-[H]]|Eliminacion de una caracter de un tramo|
+|(a\|b)|Eleccion entre dos expresiones|
+|b?|La secuencia de una cadena 0 o un episodio de una cadena|
+|1*|Sucesion de una secuencia o mas apariciones|
+|(cd)+|Una secuencia de una o mas apariciones de una cadena|
