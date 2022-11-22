@@ -107,7 +107,7 @@ Los elementos complejos son aquellos formados por otros elementos o atributos. S
 ## Atributos <a name="id4">
 Declarar un atributo:
 ~~~
-<xs:attribute name="name_value" type="data_type" use=""/>
+<xs:attribute name="name_value" type="data_type" use="optional"/>
 ~~~
 
 Estos son opcionales por defecto (*optional*) si queremos que sean obligatorios *use="required"*
