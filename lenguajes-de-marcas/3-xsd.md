@@ -1,8 +1,8 @@
 # XSD
 
-- [Elementos](#id1)
-- [Elementos simples](#id2)
-- [Elementos complejos](#id3)
+1. [Elementos](#id1)
+2. [Elementos simples](#id2)
+3. [Elementos complejos](#id3)
 
 ### Raiz XSD
     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -44,3 +44,25 @@ Los ficheros XSD pueden estar formados por [elementos simples](#id2) o [elemento
 - ***gDay***: una fecha del calendario gregoriano (día)
 
 ## Elementos simples <a name="id2"/>
+Son aquellos que solamente pueden contener un valor concreto (un texto, un numero) y nada mas.
+
+    <xs:element name="Nombre" type="data_type">
+
+## Elementos complejos <a name="id3">
+Los elementos complejos son aquellos formados por otros elementos o atributos. Se distinguen cuatro tipos de elementos complejos
+- Elementos vacios
+    <xs:element name="bola">
+        <xs:complexType>
+            <xs:attribute name="numero" type="numeroDeBola"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="numeroDeBola">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="1"/>
+            <xs:maxExclusive value="90"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+- Elementos que contienen otros elementos
+- Elementos que contienen otros elementos y texto
