@@ -1,13 +1,17 @@
 # XSD
 
+[Elementos](#id1)
+[Elementos simples](#id2)
+[Elementos complejos](#id3)
+
 ### Raiz XSD
     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 ### Inlcuir XSD en XML
     <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="root.xsd">
 
-## XSD Elementos
-Los ficheros XSD pueden estar formados por [elementos simples](#id2) o [elementos complejos]
+## XSD Elementos <a name="id1"/>
+Los ficheros XSD pueden estar formados por [elementos simples](#id2) o [elementos complejos](#id3)
     <xs:element name="xxx" type="data-type" />
 
 ### Tipos de datos simples predefinidos
