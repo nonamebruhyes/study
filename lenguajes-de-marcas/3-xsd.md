@@ -3,10 +3,11 @@
 1. [Elementos](#id1)
 2. [Elementos simples](#id2)
 3. [Elementos complejos](#id3)
-3. [Declaracion y extension de elementos](#id4)
-4. [Atributos](#id5)
-4. [Valores fijos y por defecto](#id6)
-4. [Restricciones](#id7)
+3. [Indicadores](#id4)
+3. [Declaracion y extension de elementos](#id5)
+4. [Atributos](#id6)
+4. [Valores fijos y por defecto](#id7)
+4. [Restricciones](#id8)
 
 ### Raiz XSD
     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -106,14 +107,22 @@ Los elementos complejos son aquellos formados por otros elementos o atributos. S
 </persona>
 ~~~
 
-### Contenido de los elementos complejos
-Los elementos complejos pueden contener:
+## Indicadores <a name="id4">
+Los indicadores indican como pueden aparecer los elementos en los documentos XML.
 
+Orden (elemento):
 - ***\<xs:sequence /\>***: contiene una secuencia de elementos.
 - ***\<xs:all /\>***: contiene una secuencia de elementos en cualquier orden.
 - ***\<xs:choice /\>***: eleccion de elementos.
 
-## Declaracion y extension de elementos <a name="id4">
+Repeticion (atributo):
+- ***maxOccurs***: numero maximo de veces que puede aparecer el elemento, si es infinito *unbounded*
+- ***minOccurs***: numero minimo de veces que debe aparecer el elemento
+
+Se pueden declarar grupos de elementos mediante *\<xs:group /\>* y referenciarlo en el *complexType*
+- ***\<xs:group name="nombre">*IndicadorDeOrden*\<xs:group/\>***
+
+## Declaracion y extension de elementos <a name="id5">
 Los elementos pueden ser referenciados a elementos globales que hemos creado y estos globales tambien pueden ser extendidos, como se observa en el siguiente ejemplo:
 ~~~
 <xs:element name="Persona" type="InformacionPersonalCompleta"/>
@@ -137,7 +146,7 @@ Los elementos pueden ser referenciados a elementos globales que hemos creado y e
 </xs:complexType>
 ~~~
 
-## Atributos <a name="id5">
+## Atributos <a name="id6">
 Declarar un atributo:
 ~~~
 <xs:attribute name="name_value" type="data_type" use="optional"/>
@@ -145,7 +154,7 @@ Declarar un atributo:
 
 Estos son opcionales por defecto (*optional*) si queremos que sean obligatorios *use="required"*
 
-## Valores fijos y por defecto <a name="id6">
+## Valores fijos y por defecto <a name="id7">
 Es posible definir ciertos valores por defecto o fijos para los elementos XSD, utilizando los atributos default y fixed
 
 ~~~
@@ -155,7 +164,7 @@ Es posible definir ciertos valores por defecto o fijos para los elementos XSD, u
 
 Un elemento con valor por defecto asignara dicho valor si no se especifica en el XML. Un valor fijo tendra siempre el valor definido en el XSD y si se le asigna otro valor dara error en la validacion
 
-## Restricciones <a name="id7">
+## Restricciones <a name="id8">
 Las restricciones sirven para definir que datos aceptamos como valor para nuestros elementos y atributos. Estas no se limitan al tipo de datos, sino que podemos especificar ciertas restricciones en los valores:
 
 - Valores maximos y minimos
