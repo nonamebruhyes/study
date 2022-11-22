@@ -7,6 +7,7 @@
     <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="root.xsd">
 
 ## XSD Elementos
+Los ficheros XSD pueden estar formados por [elementos simples](#id2) o [elementos complejos]
     <xs:element name="xxx" type="data-type" />
 
 ### Tipos de datos simples predefinidos
@@ -37,3 +38,5 @@
 - ***gMonthDay***: día y mes del calendario gregoriano
 - ***gMonth***: un mes del calendario gregoriano
 - ***gDay***: una fecha del calendario gregoriano (día)
+
+## Elementos simples <a href="id2"/>
