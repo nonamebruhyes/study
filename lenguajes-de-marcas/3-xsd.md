@@ -105,7 +105,10 @@ Los elementos complejos son aquellos formados por otros elementos o atributos. S
 </persona>
 ~~~
 
-En los ejemplos anteriores vemos
+### Contenido de los elementos complejos
+Los elementos complejos pueden contener:
+
+- ***\<xs:sequence /\>***
 
 ## Atributos <a name="id4">
 Declarar un atributo:
