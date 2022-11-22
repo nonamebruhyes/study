@@ -67,4 +67,37 @@ Los elementos complejos son aquellos formados por otros elementos o atributos. S
 </xs:simpleType>
 ~~~
 - Elementos que contienen otros elementos
+~~~
+<xs:element name="Persona">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="Nombre" type="xs:string"/>
+            <xs:element name="Apellido" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+...
+<Persona>
+    <Nombre>Juan</Nombre>
+    <Apellido>Forner</Apellido>
+</Persona>
+~~~
 - Elementos que contienen otros elementos y texto
+~~~
+<xs:element name="persona">
+  <xs:complexType mixed="true">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string"/>
+      <xs:element name="ciudad" type="xs:string"/>
+      <xs:element name="edad" type="xs:positiveInteger"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+...
+<persona>
+    Aqui contiene texto
+    <nombre>Juan Daniel Forner</nombre>
+    <ciudad>Valencia</ciudad>
+    <edad>23</edad>
+</persona>
+~~~
