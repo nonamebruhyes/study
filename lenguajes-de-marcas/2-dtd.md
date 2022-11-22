@@ -24,3 +24,21 @@ Si definimos un DTD en un documento externo, debemos referenciarlo:
 ~~~
 <!DOCTYPE root SYSTEM "root.dtd">
 ~~~
+
+## Elementos
+Los elementos de un DTD se definen mediante ***\<!ELEMENT ...\>***:
+~~~
+<!ELEMENT element-name category>
+o
+<!ELEMENT element-name (element-content)>
+~~~
+
+*category*:
+- ***EMPTY***: define un elemento vacio
+- ***ANY***: define un elemento que puede tener cualquier contenido
+
+*element-content*:
+- #PCDATA: texto que puede ser procesado
+- childs: indica el nombre de los hijos del elemento
+
+
