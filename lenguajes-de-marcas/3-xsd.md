@@ -3,9 +3,10 @@
 1. [Elementos](#id1)
 2. [Elementos simples](#id2)
 3. [Elementos complejos](#id3)
-4. [Atributos](#id4)
-4. [Valores fijos y por defecto](#id5)
-4. [Restricciones](#id6)
+3. [Declaracion y extension de elementos](#id4)
+4. [Atributos](#id5)
+4. [Valores fijos y por defecto](#id6)
+4. [Restricciones](#id7)
 
 ### Raiz XSD
     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -112,7 +113,10 @@ Los elementos complejos pueden contener:
 - ***\<xs:all /\>***: contiene una secuencia de elementos en cualquier orden.
 - ***\<xs:choice /\>***: eleccion de elementos.
 
-## Atributos <a name="id4">
+## Declaracion y extension de elementos <a name="id4">
+
+
+## Atributos <a name="id5">
 Declarar un atributo:
 ~~~
 <xs:attribute name="name_value" type="data_type" use="optional"/>
@@ -120,7 +124,7 @@ Declarar un atributo:
 
 Estos son opcionales por defecto (*optional*) si queremos que sean obligatorios *use="required"*
 
-## Valores fijos y por defecto <a name="id5">
+## Valores fijos y por defecto <a name="id6">
 Es posible definir ciertos valores por defecto o fijos para los elementos XSD, utilizando los atributos default y fixed
 
 ~~~
@@ -130,7 +134,7 @@ Es posible definir ciertos valores por defecto o fijos para los elementos XSD, u
 
 Un elemento con valor por defecto asignara dicho valor si no se especifica en el XML. Un valor fijo tendra siempre el valor definido en el XSD y si se le asigna otro valor dara error en la validacion
 
-## Restricciones <a name="id6">
+## Restricciones <a name="id7">
 Las restricciones sirven para definir que datos aceptamos como valor para nuestros elementos y atributos. Estas no se limitan al tipo de datos, sino que podemos especificar ciertas restricciones en los valores:
 
 - Valores maximos y minimos
