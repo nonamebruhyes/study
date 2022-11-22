@@ -114,7 +114,27 @@ Los elementos complejos pueden contener:
 - ***\<xs:choice /\>***: eleccion de elementos.
 
 ## Declaracion y extension de elementos <a name="id4">
+~~~
+<xs:element name="Persona" type="InformacionPersonalCompleta"/>
 
+<xs:complexType name="InformacionPersonal">
+    <xs:sequence>
+        <xs:element name="Nombre" type="xs:string"/>
+        <xs:element name="Apellido" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InformacionPersonalCompleta">
+    <xs:complexContent>
+        <xs:extension base="InformacionPersonal">
+            <xs:sequence>
+                <xs:element name="FechaNacimiento" type="xs:date"/>
+                <xs:element name="Telefono" type="xs:integer"/>
+            </xs:sequence>
+        </xs:extension>
+    </xs:complexContent>
+</xs:complexType>
+~~~
 
 ## Atributos <a name="id5">
 Declarar un atributo:
