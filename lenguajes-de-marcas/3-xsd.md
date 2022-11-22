@@ -138,6 +138,7 @@ Asi se declara una restriccion:
 <xs:maxInclusive value="" />
 <xs:minExclusive value="" />
 <xs:minInclusive value="" />
+<xs:totalDigits value="" />
 ~~~
 
 ### Lista de valores
@@ -148,6 +149,9 @@ Asi se declara una restriccion:
 ~~~
 
 ### Patrones
+~~~
+<xs:pattern value="patron" />
+~~~
 |Patron|Significado|Ejemplo
 |--|--|--
 |.|Cualquier caracter|;
@@ -167,3 +171,14 @@ Asi se declara una restriccion:
 |b?|La secuencia de una cadena 0 o un episodio de una cadena|
 |1*|Sucesion de una secuencia o mas apariciones|
 |(cd)+|Una secuencia de una o mas apariciones de una cadena|
+
+### Longitud del valor
+~~~
+<xs:minLength value="" />
+<xs:maxLength value="" />
+~~~
+
+### Manejo del espacio
+~~~
+<xs:whiteSpace value=("preserve" | "replace" | "collapse")>
+~~~
