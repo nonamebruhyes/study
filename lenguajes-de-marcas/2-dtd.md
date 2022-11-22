@@ -43,7 +43,7 @@ o
 
 ### Patrones de element-content
 ~~~
-1 <!ELEMENT element-name (child-name+)>
-2 <!ELEMENT element-name (child-name*)>
-3 <!ELEMENT element-name (child-name?)>
+<!ELEMENT element-name (child-name+)>
+<!ELEMENT element-name (child-name*)>
+<!ELEMENT element-name (child-name?)>
 ~~~
