@@ -39,4 +39,4 @@ Los ficheros XSD pueden estar formados por [elementos simples](#id2) o [elemento
 - ***gMonth***: un mes del calendario gregoriano
 - ***gDay***: una fecha del calendario gregoriano (día)
 
-## Elementos simples <a href="id2"/>
+## Elementos simples <a name="id2"/>
