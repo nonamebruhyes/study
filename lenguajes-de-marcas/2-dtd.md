@@ -38,7 +38,7 @@ o
 - ***ANY***: define un elemento que puede tener cualquier contenido
 
 *element-content*:
-- #PCDATA: texto que puede ser procesado
-- childs: indica el nombre de los hijos del elemento
+- ***#PCDATA***: texto que puede ser procesado
+- ***childs***: indica el nombre de los hijos del elemento
 
 
