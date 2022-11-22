@@ -112,6 +112,16 @@ Declarar un atributo:
 
 Estos son opcionales por defecto (*optional*) si queremos que sean obligatorios *use="required"*
 
+## Valores fijos y por defecto
+Es posible definir ciertos valores por defecto o fijos para los elementos XSD, utilizando los atributos default y fixed
+
+~~~
+<xs:element name="Color" type="xs:string" default="red">
+<xs:element name="Color" type="xs:string" fixed="red">
+~~~
+
+Un elemento con valor por defecto asignara dicho valor si no se especifica en el XML. Un valor fijo tendra siempre el valor definido en el XSD y si se le asigna otro valor dara error en la validacion
+
 ## Restricciones <a name="id5">
 Las restricciones sirven para definir que datos aceptamos como valor para nuestros elementos y atributos. Estas no se limitan al tipo de datos, sino que podemos especificar ciertas restricciones en los valores:
 
@@ -139,6 +149,7 @@ Asi se declara una restriccion:
 <xs:minExclusive value="" />
 <xs:minInclusive value="" />
 <xs:totalDigits value="" />
+<xs:fractionDigits value="" />
 ~~~
 
 ### Lista de valores
