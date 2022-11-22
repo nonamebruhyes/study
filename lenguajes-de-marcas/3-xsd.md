@@ -108,7 +108,8 @@ Los elementos complejos son aquellos formados por otros elementos o atributos. S
 ### Contenido de los elementos complejos
 Los elementos complejos pueden contener:
 
-- ***\<xs:sequence /\>***
+- ***\<xs:sequence /\>***: contiene una secuencia de elementos.
+- ***\<xs:choice /\>***: eleccion de elementos.
 
 ## Atributos <a name="id4">
 Declarar un atributo:
