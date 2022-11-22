@@ -53,18 +53,18 @@ Los elementos complejos son aquellos formados por otros elementos o atributos. S
 - Elementos vacios
 
 ~~~
-    <xs:element name="bola">
-        <xs:complexType>
-            <xs:attribute name="numero" type="numeroDeBola"/>
-        </xs:complexType>
-    </xs:element>
+<xs:element name="bola">
+    <xs:complexType>
+        <xs:attribute name="numero" type="numeroDeBola"/>
+    </xs:complexType>
+</xs:element>
 
-    <xs:simpleType name="numeroDeBola">
-        <xs:restriction base="xs:positiveInteger">
-            <xs:minInclusive value="1"/>
-            <xs:maxExclusive value="90"/>
-        </xs:restriction>
-    </xs:simpleType>
+<xs:simpleType name="numeroDeBola">
+    <xs:restriction base="xs:positiveInteger">
+        <xs:minInclusive value="1"/>
+        <xs:maxExclusive value="90"/>
+    </xs:restriction>
+</xs:simpleType>
 ~~~
 - Elementos que contienen otros elementos
 - Elementos que contienen otros elementos y texto
