@@ -52,6 +52,7 @@ Son aquellos que solamente pueden contener un valor concreto (un texto, un numer
 Los elementos complejos son aquellos formados por otros elementos o atributos. Se distinguen cuatro tipos de elementos complejos
 - Elementos vacios
 
+~~~
     <xs:element name="bola">
         <xs:complexType>
             <xs:attribute name="numero" type="numeroDeBola"/>
@@ -64,6 +65,6 @@ Los elementos complejos son aquellos formados por otros elementos o atributos. S
             <xs:maxExclusive value="90"/>
         </xs:restriction>
     </xs:simpleType>
-
+~~~
 - Elementos que contienen otros elementos
 - Elementos que contienen otros elementos y texto
