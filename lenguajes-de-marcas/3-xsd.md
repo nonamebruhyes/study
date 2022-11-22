@@ -1,8 +1,8 @@
 # XSD
 
-[Elementos](#id1)
-[Elementos simples](#id2)
-[Elementos complejos](#id3)
+- [Elementos](#id1)
+- [Elementos simples](#id2)
+- [Elementos complejos](#id3)
 
 ### Raiz XSD
     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
