@@ -41,4 +41,9 @@ o
 - ***#PCDATA***: texto que puede ser procesado
 - ***childs***: indica el nombre de los hijos del elemento
 
-
+### Patrones de element-content
+~~~
+1 <!ELEMENT element-name (child-name+)>
+2 <!ELEMENT element-name (child-name*)>
+3 <!ELEMENT element-name (child-name?)>
+~~~
