@@ -72,3 +72,11 @@ ENTITY|una entidad
 ENTITIES|lista de entidades
 NOTATION|el nombre de una notacion
 xml:|valor predefinido xml
+
+***attribute-value***
+|Valor|Explicacion
+|--|--
+|value|el valor default del atributo
+|#REQUIRED|el atributo es obligatorio
+|#IMPLIED|el atributo es opcional
+|#FIXED value|el valor del atributo esta fijado
