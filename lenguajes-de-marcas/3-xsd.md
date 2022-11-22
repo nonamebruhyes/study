@@ -51,6 +51,7 @@ Son aquellos que solamente pueden contener un valor concreto (un texto, un numer
 ## Elementos complejos <a name="id3">
 Los elementos complejos son aquellos formados por otros elementos o atributos. Se distinguen cuatro tipos de elementos complejos
 - Elementos vacios
+
     <xs:element name="bola">
         <xs:complexType>
             <xs:attribute name="numero" type="numeroDeBola"/>
