@@ -51,3 +51,24 @@ o
 - ***+***: indica que el elemento puede aparecer una o mas veces
 - ***\****: indica que el elemento puede aparecer cero o mas veces
 - ***+***: indica que el elemento puede aparecer 0 o una vez
+
+## Atributos
+Para declarar atributos en un DTD utilizamos la etiqueta ***\<!ATTLIST\>***
+~~~
+<!ATTLIST element-name attribute-name attribute-type attribute-value>
+~~~
+
+***attribute-type***:
+|Tipo|Descripcion
+|--|--
+|CDATA|datos de caracteres
+|(en1\|en2\|...)|debe ser uno de la lista
+|ID|identificador unico
+|IDREF|identificador de otro elemento
+|IDREFS|lista de otros identificadores
+NMTOKEN|nombre XML valido
+NMTOKENS|lista de nombres XML validos
+ENTITY|una entidad
+ENTITIES|lista de entidades
+NOTATION|el nombre de una notacion
+xml:|valor predefinido xml
