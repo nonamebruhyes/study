@@ -121,6 +121,41 @@ Repeticion (atributo):
 
 Se pueden declarar grupos de elementos mediante *\<xs:group /\>* y referenciarlo en el *complexType*
 - ***\<xs:group name="nombre">*** *IndicadorDeOrden* ***\<xs:group/\>***
+~~~
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:group name="custGroup">
+  <xs:sequence>
+    <xs:element name="customer" type="xs:string"/>
+    <xs:element name="orderdetails" type="xs:string"/>
+    <xs:element name="billto" type="xs:string"/>
+    <xs:element name="shipto" type="xs:string"/>
+  </xs:sequence>
+</xs:group>
+
+<xs:element name="order" type="ordertype"/>
+
+<xs:complexType name="ordertype">
+  <xs:group ref="custGroup"/>
+  <xs:attribute name="status" type="xs:string"/>
+</xs:complexType>
+
+</xs:schema>
+~~~
+
+- ***attributeGroup***: como *group*
+~~~
+<xs:attributeGroup name="personattr">
+  <xs:attribute name="attr1" type="string"/>
+  <xs:attribute name="attr2" type="integer"/>
+</xs:attributeGroup>
+
+<xs:complexType name="person">
+  <xs:attributeGroup ref="personattr"/>
+</xs:complexType>
+~~~
+
 
 ## Declaracion y extension de elementos <a name="id5">
 Los elementos pueden ser referenciados a elementos globales que hemos creado y estos globales tambien pueden ser extendidos, como se observa en el siguiente ejemplo:
