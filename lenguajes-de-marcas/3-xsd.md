@@ -148,3 +148,22 @@ Asi se declara una restriccion:
 ~~~
 
 ### Patrones
+|Patron|Significado|Ejemplo
+|--|--|--
+|.|Cualquier caracter|;
+|\w|Cualquier letra|M
+|\d|Un digito|1
+|\D|Cualquier caracter que no sea un digito| a
+|\s|Espacio (tabulador, espacio ...) cualquier caracter| 
+|\S|Cualquier caracter que no sea un espacio en blanco|C
+|\d{n}|n digitos exactos|
+|\d{n,|n o mas digitos|
+|\d{n, m}|digitos n o m|
+|[xyz]|eleccion x, y o z|
+|[A-Z]|uno de los caracteres de A a Z|
+|[^abc]|Revocacion de un conjunto de caracteresa|
+|||
+|||
+|||
+|||
+|||
