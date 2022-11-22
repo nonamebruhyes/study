@@ -114,6 +114,7 @@ Los elementos complejos pueden contener:
 - ***\<xs:choice /\>***: eleccion de elementos.
 
 ## Declaracion y extension de elementos <a name="id4">
+Los elementos pueden ser referenciados a elementos globales que hemos creado y estos globales tambien pueden ser extendidos, como se observa en el siguiente ejemplo:
 ~~~
 <xs:element name="Persona" type="InformacionPersonalCompleta"/>
 
