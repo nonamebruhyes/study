@@ -120,7 +120,7 @@ Repeticion (atributo):
 - ***minOccurs***: numero minimo de veces que debe aparecer el elemento
 
 Se pueden declarar grupos de elementos mediante *\<xs:group /\>* y referenciarlo en el *complexType*
-- ***\<xs:group name="nombre">****IndicadorDeOrden****\<xs:group/\>***
+- ***\<xs:group name="nombre">*** *IndicadorDeOrden* ***\<xs:group/\>***
 
 ## Declaracion y extension de elementos <a name="id5">
 Los elementos pueden ser referenciados a elementos globales que hemos creado y estos globales tambien pueden ser extendidos, como se observa en el siguiente ejemplo:
