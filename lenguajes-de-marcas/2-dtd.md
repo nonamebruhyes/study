@@ -48,6 +48,6 @@ o
 <!ELEMENT element-name (child-name?)>
 ~~~
 
-***+***: indica que el elemento puede aparecer una o mas veces
-***\****: indica que el elemento puede aparecer cero o mas veces
-***+***: indica que el elemento puede aparecer 0 o una vez
+- ***+***: indica que el elemento puede aparecer una o mas veces
+- ***\****: indica que el elemento puede aparecer cero o mas veces
+- ***+***: indica que el elemento puede aparecer 0 o una vez
