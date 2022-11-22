@@ -3,7 +3,8 @@
 1. [Elementos](#id1)
 2. [Elementos simples](#id2)
 3. [Elementos complejos](#id3)
-4. [Restricciones](#id4)
+4. [Atributos](#id4)
+4. [Restricciones](#id5)
 
 ### Raiz XSD
     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -103,7 +104,15 @@ Los elementos complejos son aquellos formados por otros elementos o atributos. S
 </persona>
 ~~~
 
-## Restricciones <a name="id4">
+## Atributos <a name="id4">
+Declarar un atributo:
+~~~
+<xs:attribute name="name_value" type="data_type" use=""/>
+~~~
+
+Estos son opcionales por defecto (*optional*) si queremos que sean obligatorios *use="required"*
+
+## Restricciones <a name="id5">
 Las restricciones sirven para definir que datos aceptamos como valor para nuestros elementos y atributos. Estas no se limitan al tipo de datos, sino que podemos especificar ciertas restricciones en los valores:
 
 - Valores maximos y minimos
