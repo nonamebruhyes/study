@@ -80,3 +80,15 @@ xml:|valor predefinido xml
 |#REQUIRED|el atributo es obligatorio
 |#IMPLIED|el atributo es opcional
 |#FIXED value|el valor del atributo esta fijado
+
+## Entidades
+Las entidades se usan para definir atajos para caracteres especiales en documentos XML.
+
+~~~
+<!ENTITY entity_name "entity_value">
+~~~
+
+Entidades externas
+~~~
+<!ENTITY entity-name SYSTEM "URI/URL">
+~~~
